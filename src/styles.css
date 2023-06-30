@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light dark;
+  /* --md-switch-selected-track-color: blue;
+  --md-switch-selected-container-color: red; */
+  --md-filled-field-content-color: red;
+}
+.popup {
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--md-sys-color-background);
+}
+
+.popup_header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#popup_show {
+  border: 3px solid var(--md-sys-color-outline);
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  outline: none;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  height: 50px;
+}
+
+.line {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 12px;
+}
