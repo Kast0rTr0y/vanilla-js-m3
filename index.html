@@ -3,9 +3,11 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,215 +19,229 @@
 
   <body>
     <header id="app"></header>
-    <div class="line">
-      <md-radio name="story1" value="radioA"></md-radio>
-      <md-radio name="story2" value="radioB" checked></md-radio>
-      <md-radio name="story3" value="radioC" disabled></md-radio>
-      <md-radio name="story4" value="radioD" disabled checked></md-radio>
-    </div>
-    <div class="line">
-      <md-switch></md-switch>
-    </div>
-    <div class="line">
-      <md-assist-chip label="Assist chip" elevated="true">
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-assist-chip>
-      <md-assist-chip label="Assist chip" disabled="true" elevated="true">
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-assist-chip>
-      <md-assist-chip label="Assist chip">
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-assist-chip>
-      <md-assist-chip label="Assist chip" disabled>
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-assist-chip>
-    </div>
-    <div class="line">
-      <md-suggestion-chip label="Suggestion chip" elevated></md-suggestion-chip>
-      <md-suggestion-chip
-        label="Suggestion chip"
-        disabled
-        elevated
-      ></md-suggestion-chip>
-      <md-suggestion-chip label="Suggestion chip"></md-suggestion-chip>
-      <md-suggestion-chip label="Suggestion chip" disabled></md-suggestion-chip>
-    </div>
-    <div class="line">
-      <md-filter-chip label="filter chip" elevated></md-filter-chip>
-      <md-filter-chip label="filter chip" disabled elevated></md-filter-chip>
-      <md-filter-chip label="filter chip" elevated>
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-filter-chip>
-      <md-filter-chip label="filter chip" disabled elevated>
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-filter-chip>
-      <md-filter-chip label="filter chip"></md-filter-chip>
-      <md-filter-chip label="filter chip" disabled></md-filter-chip>
-      <md-filter-chip label="filter chip">
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-filter-chip>
-      <md-filter-chip label="filter chip" disabled>
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-filter-chip>
-    </div>
-    <div class="line">
-      <md-input-chip label="input chip"></md-input-chip>
-      <md-input-chip label="input chip" disabled></md-input-chip>
-      <md-input-chip label="input chip">
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-input-chip>
-      <md-input-chip label="input chip" disabled>
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-input-chip>
-    </div>
-    <div class="line">
-      <md-elevated-button>
-        Enabled
-      </md-elevated-button>
-      <md-elevated-button disabled>
-        Disabled
-      </md-elevated-button>
-      <md-elevated-button>
-        Icon left
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-elevated-button>
-      <md-elevated-button trailing-icon>
-        Icon right
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-elevated-button>
-    </div>
-    <div class="line">
-      <md-filled-button>
-        Enabled
-      </md-filled-button>
-      <md-filled-button disabled>
-        Disabled
-      </md-filled-button>
-      <md-filled-button>
-        Icon left
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-filled-button>
-      <md-filled-button trailing-icon>
-        Icon right
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-filled-button>
-    </div>
-    <div class="line">
-      <md-tonal-button>
-        Enabled
-      </md-tonal-button>
-      <md-tonal-button disabled>
-        Disabled
-      </md-tonal-button>
-      <md-tonal-button>
-        Icon left
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-tonal-button>
-      <md-tonal-button trailing-icon>
-        Icon right
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-tonal-button>
-    </div>
-    <div class="line">
-      <md-outlined-button>
-        Enabled
-      </md-outlined-button>
-      <md-outlined-button disabled>
-        Disabled
-      </md-outlined-button>
-      <md-outlined-button>
-        Icon left
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-outlined-button>
-      <md-outlined-button trailing-icon>
-        Icon right
-        <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-      </md-outlined-button>
-    </div>
-    <div class="line">
-      <md-outlined-text-field label="label">
-        <md-icon slot="leadingicon" aria-hidden="true">edit</md-icon>
-      </md-outlined-text-field>
-      <md-outlined-text-field label="label">
-        <md-icon slot="trailingicon" aria-hidden="true">edit</md-icon>
-      </md-outlined-text-field>
-      <md-outlined-text-field label="label"></md-outlined-text-field>
-      <md-outlined-text-field disabled label="label"></md-outlined-text-field>
-      <md-outlined-text-field
-        disabled
-        label="label"
-        value="value"
-      ></md-outlined-text-field>
-    </div>
-    <div class="line">
-      <md-checkbox></md-checkbox>
-      <md-checkbox checked></md-checkbox>
-      <md-checkbox indeterminate></md-checkbox>
-    </div>
-    <div class="line">
-      <md-fab size="small">
-        <md-icon slot="icon">edit</md-icon>
-      </md-fab>
-      <md-fab size="medium">
-        <md-icon slot="icon">edit</md-icon>
-      </md-fab>
-      <md-fab size="large">
-        <md-icon slot="icon">edit</md-icon>
-      </md-fab>
-      <md-fab size="medium" label="label">
-        <md-icon slot="icon">edit</md-icon>
-      </md-fab>
-      <md-fab size="large" label="label"></md-fab>
-    </div>
-    <div class="label">
-      <md-standard-icon-button>
-        <md-icon>edit</md-icon>
-      </md-standard-icon-button>
-      <md-standard-icon-button disabled>
-        <md-icon>edit</md-icon>
-      </md-standard-icon-button>
-      <md-outlined-icon-button>
-        <md-icon>edit</md-icon>
-      </md-outlined-icon-button>
-      <md-outlined-icon-button disabled>
-        <md-icon>edit</md-icon>
-      </md-outlined-icon-button>
-      <md-filled-icon-button>
-        <md-icon>edit</md-icon>
-      </md-filled-icon-button>
-      <md-filled-icon-button disabled>
-        <md-icon>edit</md-icon>
-      </md-filled-icon-button>
-      <md-filled-tonal-icon-button>
-        <md-icon>edit</md-icon>
-      </md-filled-tonal-icon-button>
-      <md-filled-tonal-icon-button disabled>
-        <md-icon>edit</md-icon>
-      </md-filled-tonal-icon-button>
-      <md-list>
-        <md-list-item
+    <main>
+      <div class="line">
+        <md-radio name="story1" value="radioA"></md-radio>
+        <md-radio name="story2" value="radioB" checked></md-radio>
+        <md-radio name="story3" value="radioC" disabled></md-radio>
+        <md-radio name="story4" value="radioD" disabled checked></md-radio>
+      </div>
+      <div class="line">
+        <md-switch selected></md-switch>
+        <md-switch></md-switch>
+        <md-switch selected show-only-selected-icon="true"></md-switch>
+      </div>
+      <div class="line">
+        <md-assist-chip label="Assist chip" elevated="true">
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-assist-chip>
+        <md-assist-chip label="Assist chip" disabled="true" elevated="true">
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-assist-chip>
+        <md-assist-chip label="Assist chip">
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-assist-chip>
+        <md-assist-chip label="Assist chip" disabled>
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-assist-chip>
+      </div>
+      <div class="line">
+        <md-suggestion-chip label="Suggestion chip" elevated></md-suggestion-chip>
+        <md-suggestion-chip
+          label="Suggestion chip"
           disabled
-          headLine="headLine"
-          supporting-text="supportingText"
-          trailing-supporting-text="trailingSupportingText"
-        ></md-list-item>
-        <md-list-item
-          headLine="headLine"
-          supporting-text="supportingText"
-          trailing-supporting-text="trailingSupportingText"
-        ></md-list-item>
-        <md-list-item
-          headLine="headLine"
-          supporting-text="supportingText"
-          trailing-supporting-text="trailingSupportingText"
-        ></md-list-item>
-        <md-list-item headLine="headLine" supporting-text="supportingText">
-          <md-icon data-variant="icon" slot="start">edit</md-icon>
-          <md-icon data-variant="icon" slot="end">chevron_right</md-icon>
-        </md-list-item>
-      </md-list>
-    </div>
-
+          elevated
+        ></md-suggestion-chip>
+        <md-suggestion-chip label="Suggestion chip"></md-suggestion-chip>
+        <md-suggestion-chip label="Suggestion chip" disabled></md-suggestion-chip>
+      </div>
+      <div class="line">
+        <md-filter-chip label="filter chip" elevated></md-filter-chip>
+        <md-filter-chip label="filter chip" disabled elevated></md-filter-chip>
+        <md-filter-chip label="filter chip" elevated>
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-filter-chip>
+        <md-filter-chip label="filter chip" disabled elevated>
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-filter-chip>
+        <md-filter-chip label="filter chip"></md-filter-chip>
+        <md-filter-chip label="filter chip" disabled></md-filter-chip>
+        <md-filter-chip label="filter chip">
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-filter-chip>
+        <md-filter-chip label="filter chip" disabled>
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-filter-chip>
+      </div>
+      <div class="line">
+        <md-input-chip label="input chip"></md-input-chip>
+        <md-input-chip label="input chip" disabled></md-input-chip>
+        <md-input-chip label="input chip">
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-input-chip>
+        <md-input-chip label="input chip" disabled>
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-input-chip>
+      </div>
+      <div class="line">
+        <md-elevated-button>
+          Enabled
+        </md-elevated-button>
+        <md-elevated-button disabled>
+          Disabled
+        </md-elevated-button>
+        <md-elevated-button>
+          Icon left
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-elevated-button>
+        <md-elevated-button trailing-icon>
+          Icon right
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-elevated-button>
+      </div>
+      <div class="line">
+        <md-filled-button>
+          Enabled
+        </md-filled-button>
+        <md-filled-button disabled>
+          Disabled
+        </md-filled-button>
+        <md-filled-button>
+          Icon left
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-filled-button>
+        <md-filled-button trailing-icon>
+          Icon right
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-filled-button>
+      </div>
+      <div class="line">
+        <md-tonal-button>
+          Enabled
+        </md-tonal-button>
+        <md-tonal-button disabled>
+          Disabled
+        </md-tonal-button>
+        <md-tonal-button>
+          Icon left
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-tonal-button>
+        <md-tonal-button trailing-icon>
+          Icon right
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-tonal-button>
+      </div>
+      <div class="line">
+        <md-outlined-button>
+          Enabled
+        </md-outlined-button>
+        <md-outlined-button disabled>
+          Disabled
+        </md-outlined-button>
+        <md-outlined-button>
+          Icon left
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-outlined-button>
+        <md-outlined-button trailing-icon>
+          Icon right
+          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
+        </md-outlined-button>
+      </div>
+      <div class="line">
+        <md-outlined-text-field label="label">
+          <md-icon slot="leadingicon" aria-hidden="true">edit</md-icon>
+        </md-outlined-text-field>
+        <md-outlined-text-field label="label">
+          <md-icon slot="trailingicon" aria-hidden="true">edit</md-icon>
+        </md-outlined-text-field>
+        <md-outlined-text-field label="label"></md-outlined-text-field>
+        <md-outlined-text-field disabled label="label"></md-outlined-text-field>
+        <md-outlined-text-field
+          disabled
+          label="label"
+          value="value"
+        ></md-outlined-text-field>
+      </div>
+      <div class="line">
+        <md-checkbox></md-checkbox>
+        <md-checkbox checked></md-checkbox>
+        <md-checkbox indeterminate></md-checkbox>
+      </div>
+      <div class="line">
+        <md-fab variant="surface" size="small">
+          <md-icon slot="icon">edit</md-icon>
+        </md-fab>
+        <md-fab variant="primary" size="small">
+          <md-icon slot="icon">edit</md-icon>
+        </md-fab>
+        <md-fab variant="secondary" size="small">
+          <md-icon slot="icon">edit</md-icon>
+        </md-fab>
+        <md-fab variant="tertiary" size="small">
+          <md-icon slot="icon">edit</md-icon>
+        </md-fab>
+        <md-fab size="medium">
+          <md-icon slot="icon">edit</md-icon>
+        </md-fab>
+        <md-fab size="large">
+          <md-icon slot="icon">edit</md-icon>
+        </md-fab>
+        <md-fab size="medium" label="label">
+          <md-icon slot="icon">edit</md-icon>
+        </md-fab>
+        <md-fab size="large" label="label"></md-fab>
+      </div>
+      <div class="line">
+        <md-standard-icon-button>
+          <md-icon>edit</md-icon>
+        </md-standard-icon-button>
+        <md-outlined-icon-button>
+          <md-icon>edit</md-icon>
+        </md-outlined-icon-button>
+        <md-filled-icon-button>
+          <md-icon>edit</md-icon>
+        </md-filled-icon-button>
+        <md-filled-tonal-icon-button>
+          <md-icon>edit</md-icon>
+        </md-filled-tonal-icon-button>
+        <md-standard-icon-button disabled>
+          <md-icon>edit</md-icon>
+        </md-standard-icon-button>
+        <md-outlined-icon-button disabled>
+          <md-icon>edit</md-icon>
+        </md-outlined-icon-button>
+        <md-filled-icon-button disabled>
+          <md-icon>edit</md-icon>
+        </md-filled-icon-button>
+        <md-filled-tonal-icon-button disabled>
+          <md-icon>edit</md-icon>
+        </md-filled-tonal-icon-button>
+      </div>
+      <div class="line">
+        <md-list>
+          <md-list-item
+            disabled
+            headLine="Head line 1"
+            supporting-text="Supporting text 1"
+            trailing-supporting-text="trailingSupportingText"
+          ></md-list-item>
+          <md-list-item
+          headLine="Head line 2"
+            supporting-text="Supporting text 2"
+            trailing-supporting-text="trailingSupportingText"
+          ></md-list-item>
+          <md-list-item
+            headLine="Head line 3"
+            supporting-text="Supporting text 3"
+            trailing-supporting-text="trailingSupportingText"
+          ></md-list-item>
+          <md-list-item headLine="Head line 4" supporting-text="supportingText">
+            <md-icon data-variant="icon" slot="start">edit</md-icon>
+            <md-icon data-variant="icon" slot="end">chevron_right</md-icon>
+          </md-list-item>
+        </md-list>
+      </div>
+    </main>
     <script type="module" src="src/index.js"></script>
   </body>
 </html>
