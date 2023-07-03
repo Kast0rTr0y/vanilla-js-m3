@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,228 +18,602 @@
   </head>
 
   <body>
-    <header id="app"></header>
+<!--    <header></header>-->
     <main>
-      <div class="line">
-        <md-radio name="story1" value="radioA"></md-radio>
-        <md-radio name="story2" value="radioB" checked></md-radio>
-        <md-radio name="story3" value="radioC" disabled></md-radio>
-        <md-radio name="story4" value="radioD" disabled checked></md-radio>
-      </div>
-      <div class="line">
-        <md-switch selected></md-switch>
-        <md-switch></md-switch>
-        <md-switch selected show-only-selected-icon="true"></md-switch>
-      </div>
-      <div class="line">
-        <md-assist-chip label="Assist chip" elevated="true">
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-assist-chip>
-        <md-assist-chip label="Assist chip" disabled="true" elevated="true">
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-assist-chip>
-        <md-assist-chip label="Assist chip">
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-assist-chip>
-        <md-assist-chip label="Assist chip" disabled>
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-assist-chip>
-      </div>
-      <div class="line">
-        <md-suggestion-chip label="Suggestion chip" elevated></md-suggestion-chip>
-        <md-suggestion-chip
-          label="Suggestion chip"
-          disabled
-          elevated
-        ></md-suggestion-chip>
-        <md-suggestion-chip label="Suggestion chip"></md-suggestion-chip>
-        <md-suggestion-chip label="Suggestion chip" disabled></md-suggestion-chip>
-      </div>
-      <div class="line">
-        <md-filter-chip label="filter chip" elevated></md-filter-chip>
-        <md-filter-chip label="filter chip" disabled elevated></md-filter-chip>
-        <md-filter-chip label="filter chip" elevated>
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-filter-chip>
-        <md-filter-chip label="filter chip" disabled elevated>
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-filter-chip>
-        <md-filter-chip label="filter chip"></md-filter-chip>
-        <md-filter-chip label="filter chip" disabled></md-filter-chip>
-        <md-filter-chip label="filter chip">
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-filter-chip>
-        <md-filter-chip label="filter chip" disabled>
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-filter-chip>
-      </div>
-      <div class="line">
-        <md-input-chip label="input chip"></md-input-chip>
-        <md-input-chip label="input chip" disabled></md-input-chip>
-        <md-input-chip label="input chip">
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-input-chip>
-        <md-input-chip label="input chip" disabled>
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-input-chip>
-      </div>
-      <div class="line">
-        <md-elevated-button>
-          Enabled
-        </md-elevated-button>
-        <md-elevated-button disabled>
-          Disabled
-        </md-elevated-button>
-        <md-elevated-button>
-          Icon left
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-elevated-button>
-        <md-elevated-button trailing-icon>
-          Icon right
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-elevated-button>
-      </div>
-      <div class="line">
-        <md-filled-button>
-          Enabled
-        </md-filled-button>
-        <md-filled-button disabled>
-          Disabled
-        </md-filled-button>
-        <md-filled-button>
-          Icon left
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-filled-button>
-        <md-filled-button trailing-icon>
-          Icon right
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-filled-button>
-      </div>
-      <div class="line">
-        <md-tonal-button>
-          Enabled
-        </md-tonal-button>
-        <md-tonal-button disabled>
-          Disabled
-        </md-tonal-button>
-        <md-tonal-button>
-          Icon left
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-tonal-button>
-        <md-tonal-button trailing-icon>
-          Icon right
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-tonal-button>
-      </div>
-      <div class="line">
-        <md-outlined-button>
-          Enabled
-        </md-outlined-button>
-        <md-outlined-button disabled>
-          Disabled
-        </md-outlined-button>
-        <md-outlined-button>
-          Icon left
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-outlined-button>
-        <md-outlined-button trailing-icon>
-          Icon right
-          <md-icon slot="icon" aria-hidden="true">edit</md-icon>
-        </md-outlined-button>
-      </div>
-      <div class="line">
-        <md-outlined-text-field label="label">
-          <md-icon slot="leadingicon" aria-hidden="true">edit</md-icon>
-        </md-outlined-text-field>
-        <md-outlined-text-field label="label">
-          <md-icon slot="trailingicon" aria-hidden="true">edit</md-icon>
-        </md-outlined-text-field>
-        <md-outlined-text-field label="label"></md-outlined-text-field>
-        <md-outlined-text-field disabled label="label"></md-outlined-text-field>
-        <md-outlined-text-field
-          disabled
-          label="label"
-          value="value"
-        ></md-outlined-text-field>
-      </div>
-      <div class="line">
-        <md-checkbox></md-checkbox>
-        <md-checkbox checked></md-checkbox>
-        <md-checkbox indeterminate></md-checkbox>
-      </div>
-      <div class="line">
-        <md-fab variant="surface" size="small">
-          <md-icon slot="icon">edit</md-icon>
-        </md-fab>
-        <md-fab variant="primary" size="small">
-          <md-icon slot="icon">edit</md-icon>
-        </md-fab>
-        <md-fab variant="secondary" size="small">
-          <md-icon slot="icon">edit</md-icon>
-        </md-fab>
-        <md-fab variant="tertiary" size="small">
-          <md-icon slot="icon">edit</md-icon>
-        </md-fab>
-        <md-fab size="medium">
-          <md-icon slot="icon">edit</md-icon>
-        </md-fab>
-        <md-fab size="large">
-          <md-icon slot="icon">edit</md-icon>
-        </md-fab>
-        <md-fab size="medium" label="label">
-          <md-icon slot="icon">edit</md-icon>
-        </md-fab>
-        <md-fab size="large" label="label"></md-fab>
-      </div>
-      <div class="line">
-        <md-standard-icon-button>
-          <md-icon>edit</md-icon>
-        </md-standard-icon-button>
-        <md-outlined-icon-button>
-          <md-icon>edit</md-icon>
-        </md-outlined-icon-button>
-        <md-filled-icon-button>
-          <md-icon>edit</md-icon>
-        </md-filled-icon-button>
-        <md-filled-tonal-icon-button>
-          <md-icon>edit</md-icon>
-        </md-filled-tonal-icon-button>
-        <md-standard-icon-button disabled>
-          <md-icon>edit</md-icon>
-        </md-standard-icon-button>
-        <md-outlined-icon-button disabled>
-          <md-icon>edit</md-icon>
-        </md-outlined-icon-button>
-        <md-filled-icon-button disabled>
-          <md-icon>edit</md-icon>
-        </md-filled-icon-button>
-        <md-filled-tonal-icon-button disabled>
-          <md-icon>edit</md-icon>
-        </md-filled-tonal-icon-button>
-      </div>
-      <div class="line">
-        <md-list>
-          <md-list-item
-            disabled
-            headLine="Head line 1"
-            supporting-text="Supporting text 1"
-            trailing-supporting-text="trailingSupportingText"
-          ></md-list-item>
-          <md-list-item
-          headLine="Head line 2"
-            supporting-text="Supporting text 2"
-            trailing-supporting-text="trailingSupportingText"
-          ></md-list-item>
-          <md-list-item
-            headLine="Head line 3"
-            supporting-text="Supporting text 3"
-            trailing-supporting-text="trailingSupportingText"
-          ></md-list-item>
-          <md-list-item headLine="Head line 4" supporting-text="supportingText">
-            <md-icon data-variant="icon" slot="start">edit</md-icon>
-            <md-icon data-variant="icon" slot="end">chevron_right</md-icon>
-          </md-list-item>
-        </md-list>
+      <div style="display: flex; flex: 1">
+        <div class="md3-navigation">
+          <div style="flex: 0;padding-bottom: 30px;width: 100%; display: flex; flex-direction: column; align-items: center">
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <md-ripple class="md3-navigation-tab__ripple"></md-ripple>
+              <md-icon style="--md-icon-size:40px;" size="40" slot="icon" variant="surface">apps</md-icon>
+            </button>
+            <md-fab size="medium">
+            <md-icon slot="icon" variant="surface">edit</md-icon>
+          </md-fab>
+          </div>
+          <div class="md3-navigation-main">
+            <button class="md3-navigation-tab md3-navigation-tab--active">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">work</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>work</md-icon>
+                </span>
+                <md-badge></md-badge>
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Моя работа
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">move_to_inbox</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>move_to_inbox</md-icon>
+                </span>
+  <!--              <md-badge></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Запросы в работе
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">inbox</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>inbox</md-icon>
+                </span>
+  <!--              <md-badge></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Мои докменты
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">account_balance_wallet</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>account_balance_wallet</md-icon>
+                </span>
+  <!--              <md-badge></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Мой доход
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">airplane_ticket</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>airplane_ticket</md-icon>
+                </span>
+  <!--              <md-badge></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Мои командировки
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">calendar_month</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>calendar_month</md-icon>
+                </span>
+                <md-badge value="1"></md-badge>
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                План отпусков
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">quick_reference</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>quick_reference</md-icon>
+                </span>
+  <!--              <md-badge value="1"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Нормативные документы
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">frame_person</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>frame_person</md-icon>
+                </span>
+                <md-badge value="99"></md-badge>
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Подбор персонала
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">clinical_notes</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>clinical_notes</md-icon>
+                </span>
+  <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Кадровые документы
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">account_balance</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>account_balance</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Финансовые документы
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">badge</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>badge</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Личные дела
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">leaderboard</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>leaderboard</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Опросы
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">cases</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>cases</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Комплект документов
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">inbox</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>inbox</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Доступные документы
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">search</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>search</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Поисковые запросы
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">star</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>star</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Избранное
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">design_services</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>design_services</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Ресурсы
+              </span>
+            </button>
+            <button class="md3-navigation-tab">
+              <md-focus-ring inward></md-focus-ring>
+              <span  class="md3-navigation-tab__icon-content">
+                <span class="md3-navigation-tab__active-indicator"></span>
+                <span class="md3-navigation-tab__icon">
+                  <md-icon slot="icon">event</md-icon>
+                </span>
+                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
+                  <md-icon slot="icon" filled>event</md-icon>
+                </span>
+                <!--              <md-badge value="99"></md-badge>-->
+              </span>
+              <span class="md3-navigation-tab__label-text">
+                Календарь
+              </span>
+            </button>
+          </div>
+          <div style="width:100%;flex: 0 0 92px;display: flex; justify-content: center; align-items: center;">
+            <svg width="27" height="47" viewBox="0 0 27 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_54299_149356)">
+                <path d="M21.6506 46.9998V42.1653H2.67114V16.7314H7.66203V37.8212H17.7844V16.7314H22.705V37.8212H26.0088V46.9998H21.6506Z" fill="#002342"/>
+                <path d="M14.0799 4.90479H11.7391V7.21695H14.0799V4.90479Z" fill="#0000FF"/>
+                <path d="M4.70971 10.7552C2.10883 10.7552 0 8.65322 0 6.06079C0 3.46836 2.10883 1.29633 4.70971 1.3664C7.3106 1.3664 9.41942 3.46836 9.41942 6.06079C9.41942 8.65322 7.3106 10.7552 4.70971 10.7552ZM4.70971 3.60849C3.37412 3.60849 2.31971 4.65948 2.31971 5.99072C2.31971 7.32197 3.37412 8.37295 4.70971 8.37295C6.0453 8.37295 7.09971 7.32197 7.09971 5.99072C7.09971 4.72954 6.0453 3.60849 4.70971 3.60849Z" fill="url(#paint0_linear_54299_149356)"/>
+                <path d="M16.4558 12.1213V0L26.9999 6.09571L16.4558 12.1213ZM18.7755 3.99374V8.12761L22.3605 6.02564L18.7755 3.99374Z" fill="url(#paint1_linear_54299_149356)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_54299_149356" x1="0" y1="6.06079" x2="9.41942" y2="6.06079" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF0057"/>
+                  <stop offset="0.95" stop-color="#FF0057"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_54299_149356" x1="16.4558" y1="6.06067" x2="26.9999" y2="6.06067" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF0057"/>
+                  <stop offset="0.95" stop-color="#FF0057"/>
+                </linearGradient>
+                <clipPath id="clip0_54299_149356">
+                  <rect width="27" height="47" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="md3-navigation-submenu" style="z-index: 10">
+          <button class="md3-navigation-item md3-navigation-item--active">
+            <md-focus-ring inward></md-focus-ring>
+            <md-ripple></md-ripple>
+            <span style="display: inline-flex; align-items: center; width: 100%">
+              <span style="padding: 0px 10px">
+                <md-icon variant="surface">folder</md-icon>
+              </span>
+              <span >Черновики</span>
+            </span>
+          </button>
+          <button class="md3-navigation-item">
+            <md-focus-ring inward></md-focus-ring>
+            <md-ripple></md-ripple>
+            <span style="display: inline-flex; align-items: center; width: 100%">
+              <span style="padding: 0px 10px">
+                <md-icon variant="surface">folder</md-icon>
+              </span>
+              <span>Все созданные мной</span>
+            </span>
+          </button>
+          <button class="md3-navigation-item">
+            <md-focus-ring inward></md-focus-ring>
+            <md-ripple></md-ripple>
+            <span style="display: inline-flex; align-items: center; width: 100%">
+              <span style="padding: 0px 10px">
+                <md-icon variant="surface">folder</md-icon>
+              </span>
+              <span>Резолюция в работе</span>
+            </span>
+          </button>
+          <button class="md3-navigation-item">
+            <md-focus-ring inward></md-focus-ring>
+            <md-ripple></md-ripple>
+            <span style="display: inline-flex; align-items: center; width: 100%">
+              <span style="padding: 0px 10px">
+                <md-icon variant="surface">folder</md-icon>
+              </span>
+              <span>Избранное</span>
+            </span>
+          </button>
+          <button class="md3-navigation-item">
+            <md-focus-ring inward></md-focus-ring>
+            <md-ripple></md-ripple>
+            <span style="display: inline-flex; align-items: center; width: 100%">
+              <span style="padding: 0px 10px">
+                <md-icon variant="surface">folder</md-icon>
+              </span>
+              <span style="flex:1; display: inline-flex; justify-content: flex-start">Ожидает отправки почтой</span>
+              <span style="padding: 0px 10px">100+</span>
+            </span>
+          </button>
+          <button class="md3-navigation-item">
+            <md-focus-ring inward></md-focus-ring>
+            <md-ripple></md-ripple>
+            <span style="display: inline-flex; align-items: center; width: 100%">
+              <span style="padding: 0px 10px">
+                <md-icon variant="surface">folder</md-icon>
+              </span>
+              <span>Все созданные мной</span>
+            </span>
+          </button>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column;">
+          <div style="flex: 0; display: flex;padding:10px">
+            <div style="flex:1;display: flex; align-items: center">
+              <span style="padding: 0px 10px;line-height: 0">
+                <md-icon>inbox</md-icon>
+              </span>
+              <h2 style="flex: 1; font-size: 24px;">Документооборот</h2>
+              <div style="display: inline-flex;flex: 0; background-color: var(--md-sys-color-surface-variant);padding:10px;border-radius: 9999px;">
+                <md-icon>search</md-icon>
+                <input style="width: 248px; outline: none; border: none; background: none" type="text">
+                <md-icon>tune</md-icon>
+              </div>
+              <span style="padding: 0px 10px;">
+                <md-standard-icon-button>
+                  <md-icon>notifications_active</md-icon>
+                </md-standard-icon-button>
+              </span>
+              <div style="display: flex; align-items: center">
+                <div id="app" style="margin:10px;border-radius: 9999px;background-color: var(--md-sys-color-surface-variant);width: 40px; height: 40px;"></div>
+                <div>
+                  <div style="font-size: 16px;">Мария Христорождественская</div>
+                  <div>Финансовый отдел</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 1 0 10vh; display: flex; flex-direction: column;padding:0px 32px 32px 32px">
+            <div style="flex: 1 0 10vh; display: flex; flex-direction: column; background-color: var(--md-sys-color-surface-container-lowest);border-radius:10px;">
+              <div style="flex: 1 0 10vh; display: flex;flex-direction: column;">
+                <div style="flex: 0 0 50px; display: flex;flex-direction: column;">
+                  <div>
+                    <md-text-button>
+                      Экспорт
+                      <md-icon slot="icon">download</md-icon>
+                    </md-text-button>
+                    <md-text-button>
+                      В комплект
+                      <md-icon slot="icon">mail</md-icon>
+                    </md-text-button>
+                    <md-text-button>
+                      Ещё
+                      <md-icon slot="icon">more_vert</md-icon>
+                    </md-text-button>
+                  </div>
+                </div>
+                <div style="flex: 0 0 50px; display: flex;flex-direction: column;">
+                  <div style="display: flex;align-items: center">
+                    <div style="flex: 0 0 50px"><md-checkbox indeterminate></md-checkbox></div>
+                    <div style="flex: 1 0 50px">Номер</div>
+                    <div style="flex: 1 0 50px">Дата</div>
+                    <div style="flex: 1 0 50px">Тип</div>
+                    <div style="flex: 1 0 50px">Автор</div>
+                    <div style="flex: 1 0 50px">Создал</div>
+                  </div>
+                </div>
+                <div class="table">
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                  <div class="table-row">
+                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
+                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
+                    <div style="flex: 1 0 50px">26.04.2022</div>
+                    <div style="flex: 1 0 50px">Резолюция</div>
+                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
+                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script type="module" src="src/index.js"></script>

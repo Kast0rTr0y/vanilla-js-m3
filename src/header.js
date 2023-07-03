@@ -16,7 +16,7 @@ document.getElementById("app").innerHTML = `
       <div class="popup_header"><button id="popup_hide" >x</button></div>
       <hex-color-picker color=${color}></hex-color-picker>
     </div>
-    <button id="popup_show">Show</button>
+    <button id="popup_show"></button>
 `;
 
 const popup = document.getElementById("popup");
