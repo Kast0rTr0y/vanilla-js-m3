@@ -11,15 +11,15 @@
   /*var(--md-sys-color-primary);*/
   --navigation-tab-hover-color: var(--md-sys-color-on-surface);
   /*var(--md-sys-color-inverse-on-surface);*/
-  --navigation-background-color: var(--md-sys-color-surface-container);
+  --navigation-background-color: var(--md-sys-color-surface);
   /*var(--md-sys-color-surface-container-high);*/
   /*var(--md-sys-color-inverse-surface);*/
-  --navigation-border-color: var(--md-sys-color-outline-variant);
+  --navigation-border-color: var(--md-sys-color-surface-variant);
   /*var(--md-sys-color-surface-container-high);*/
   /*var(--md-sys-color-inverse-surface);*/
   /*var(--md-sys-color-secondary-container);*/
   /*var(--md-sys-color-on-surface);*/
-  --md-fab-icon-color: var(--md-sys-color-on-tertiary-container);
+  /*--md-fab-icon-color: var(--md-sys-color-on-tertiary-container);*/
   /*--md-fab-container-color*/
   /* --md-switch-selected-track-color: blue;
   --md-switch-selected-container-color: red; */
@@ -50,7 +50,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: var(--md-sys-color-surface);
+  background-color: var(--md-sys-color-surface-variant);
   box-sizing: inherit;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ main {
   flex: 0 0 300px;
   display: flex;
   flex-direction: column;
-  background-color: var(--md-sys-color-surface-container);
+  background-color: var(--md-sys-color-surface);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px;
@@ -186,7 +186,7 @@ main {
   position: relative;
   text-align: center;
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   --md-ripe-hover-color: var(--md-sys-color-on-surface);
   --md-ripe-pressed-color: var(--md-sys-color-on-surface);
   --md-ripe-hover-opacity: var(--md-sys-state-hover-state-layer-opacity);
@@ -285,7 +285,7 @@ md-icon[filled] {
 .search {
   display: inline-flex;
   flex: 0;
-  background-color: var(--md-sys-color-surface-variant);
+  background-color: var(--md-sys-color-surface);
   /*padding: 10px;*/
   border-radius: 9999px;
   height: 56px;
@@ -369,7 +369,7 @@ md-icon[filled] {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--md-sys-color-inverse-on-surface);
-  color: var(--md-sys-color-on-surface);
+  color: var(--md-sys-color-on-surface-variant);
   height: 48px;
   box-sizing: border-box;
   margin-left: 16px;
