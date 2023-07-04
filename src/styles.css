@@ -6,6 +6,8 @@
   --app-icon-color: var(--md-sys-color-inverse-on-surface);
   --navigation-active-indicator-color: var(--md-sys-color-primary);
   --navigation-tab-hover-color: var(--md-sys-color-inverse-on-surface);
+  --navigation-background-color: var(--md-sys-color-inverse-surface);
+  --navigation-border-color: var(--md-sys-color-inverse-surface);
   /*var(--md-sys-color-secondary-container);*/
   /*var(--md-sys-color-on-surface);*/
   --md-fab-icon-color: var(--md-sys-color-on-tertiary-container);
@@ -99,8 +101,8 @@ main {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  border-right: 1px solid var(--md-sys-color-inverse-surface);
-  background-color: var(--md-sys-color-inverse-surface);
+  border-right: 1px solid var(--navigation-border-color);
+  background-color: var(--navigation-background-color);
 }
 .md3-navigation-header {
   flex: 0;
