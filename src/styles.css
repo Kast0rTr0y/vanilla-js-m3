@@ -1,8 +1,13 @@
 :root {
   color-scheme: light dark;
-  --logo-color-main: #002342;
-  --navigattion-button-icon-color: var(--md-sys-color-on-surface);
-  --navigattion-button-text-color: var(--md-sys-color-on-surface-variant);
+  --logo-color-main: #fff;
+  --navigattion-button-icon-color: var(--md-sys-color-inverse-on-surface);
+  --navigattion-button-text-color: var(--md-sys-color-inverse-on-surface);
+  --app-icon-color: var(--md-sys-color-inverse-on-surface);
+  --navigation-active-indicator-color: var(--md-sys-color-primary);
+  --navigation-tab-hover-color: var(--md-sys-color-inverse-on-surface);
+  /*var(--md-sys-color-secondary-container);*/
+  /*var(--md-sys-color-on-surface);*/
   --md-fab-icon-color: var(--md-sys-color-on-tertiary-container);
   /*--md-fab-container-color*/
   /* --md-switch-selected-track-color: blue;
@@ -17,7 +22,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --logo-color-main: #ffffff;
+    --logo-color-main: #002342;
   }
 }
 html {
@@ -94,8 +99,8 @@ main {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  border-right: 1px solid var(--md-sys-color-outline-variant);
-  background-color: var(--md-sys-color-surface-container);
+  border-right: 1px solid var(--md-sys-color-inverse-surface);
+  background-color: var(--md-sys-color-inverse-surface);
 }
 .md3-navigation-header {
   flex: 0;
@@ -123,11 +128,6 @@ main {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px;
-}
-@media screen and (max-width: 500px) {
-  .md3-navigation {
-    display: none;
-  }
 }
 @media screen and (max-width: 1438px) {
   .md3-navigation-submenu {
@@ -219,7 +219,7 @@ main {
   position: absolute;
   transition: width 100ms cubic-bezier(0.2, 0, 0, 1), opacity 100ms cubic-bezier(0.2, 0, 0, 1);
   width: 32px;
-  background-color: var(--md-sys-color-secondary-container);
+  background-color: var(--navigation-active-indicator-color);
   border-radius: 9999px;
 }
 .md3-navigation-tab--active .md3-navigation-tab__active-indicator  {
@@ -261,7 +261,7 @@ main {
   color: var(--navigattion-button-text-color);
 }
 .md3-navigation-tab:hover .md3-navigation-tab__label-text {
-  color: var(--md-sys-color-on-surface);
+  color: var(--navigation-tab-hover-color);
 }
 md-icon[filled] {
   --md-icon-font-variation-settings: 'FILL' 1;
@@ -372,4 +372,12 @@ md-icon[filled] {
 h2{
   margin: 0;
   color: var(--md-sys-color-on-background);
+}
+@media screen and (max-width: 690px) {
+  .md3-navigation {
+    display: none;
+  }
+  .body {
+    padding: 0px 5px 5px 5px;
+  }
 }

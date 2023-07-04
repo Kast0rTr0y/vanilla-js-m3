@@ -26,9 +26,9 @@
             <button class="md3-navigation-tab">
               <md-focus-ring inward></md-focus-ring>
               <md-ripple class="md3-navigation-tab__ripple"></md-ripple>
-              <md-icon style="--md-icon-size:40px;--md-icon-color:var(--md-sys-color-on-surface)" size="40" slot="icon" variant="surface">apps</md-icon>
+              <md-icon style="--md-icon-size:40px;--md-icon-color:var(--app-icon-color)" size="40" slot="icon" variant="surface">apps</md-icon>
             </button>
-            <md-fab size="medium">
+            <md-fab size="medium" variant="primary">
               <md-icon slot="icon" variant="surface">edit</md-icon>
             </md-fab>
           </div>
@@ -435,7 +435,7 @@
                   <div style="color: var(--md-sys-color-on-surface-variant)">Финансовый отдел</div>
                 </div>
                 <span style="padding: 20px">
-                  <md-icon>expand_more</md-icon>
+                  <md-icon>arrow_drop_down</md-icon>
                 </span>
               </div>
             </div>
@@ -456,6 +456,18 @@
                       Ещё
                       <md-icon slot="icon">more_vert</md-icon>
                     </md-text-button>
+                    <div style="flex:1;display: flex; flex-direction: row-reverse; align-items: center;">
+                      <md-icon style="margin-left:-10px;">arrow_drop_down</md-icon>
+                      <md-standard-icon-button>
+                        <md-icon>reorder</md-icon>
+                      </md-standard-icon-button>
+                      <md-standard-icon-button>
+                        <md-icon>settings</md-icon>
+                      </md-standard-icon-button>
+                      <md-standard-icon-button>
+                        <md-icon>filter_alt</md-icon>
+                      </md-standard-icon-button>
+                    </div>
                   </div>
                 </div>
               <div class="table-header">
