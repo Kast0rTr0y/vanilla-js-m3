@@ -39,7 +39,7 @@ import "./header.js";
 window
   .matchMedia("(prefers-color-scheme: dark)")
   .addEventListener("change", ({ matches }) => {
-    const color = window.localStorage.getItem("color") || "#008dd7";
+    const color = window.localStorage.getItem("color") || "#6750A4";
     if (matches) {
       applyTheme(themeFromSourceColor(argbFromHex(color)), {
         target: document.querySelector(":root"),

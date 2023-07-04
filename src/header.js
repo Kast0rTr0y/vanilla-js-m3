@@ -4,7 +4,7 @@ import {
     applyTheme
 } from "@material/material-color-utilities";
 
-const color = window.localStorage.getItem("color") || "#008dd7"
+const color = window.localStorage.getItem("color") || "#6750A4"
   
 const theme = themeFromSourceColor(argbFromHex(color));
 applyTheme(theme, {
