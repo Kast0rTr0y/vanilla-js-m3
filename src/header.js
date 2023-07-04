@@ -9,7 +9,9 @@ const color = window.localStorage.getItem("color") || "#6750A4"
 const theme = themeFromSourceColor(argbFromHex(color));
 applyTheme(theme, {
     target: document.querySelector(":root"),
-    dark: window.matchMedia("(prefers-color-scheme: dark)").matches
+    dark: window.matchMedia("(prefers-color-scheme: dark)").matches,
+    paletteTones: [0,10,20,30,40,50,60,70,80,90,95,99,100],
+    brightnessSuffix: false
 });
 document.getElementById("app").innerHTML = `
     <div id="popup" class="popup" style="display:none;">
@@ -42,7 +44,7 @@ document
     applyTheme(theme, {
       target: document.querySelector(":root"),
       dark: window.matchMedia("(prefers-color-scheme: dark)").matches,
-      paletteTones: [],
+      paletteTones: [0,10,20,30,40,50,60,70,80,90,95,99,100],
       brightnessSuffix: false
     });
   });
