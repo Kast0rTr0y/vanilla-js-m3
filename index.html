@@ -26,7 +26,7 @@
             <button class="md3-navigation-tab">
               <md-focus-ring inward></md-focus-ring>
               <md-ripple class="md3-navigation-tab__ripple"></md-ripple>
-              <md-icon style="--md-icon-size:40px;" size="40" slot="icon" variant="surface">apps</md-icon>
+              <md-icon style="--md-icon-size:40px;--md-icon-color:var(--md-sys-color-on-surface)" size="40" slot="icon" variant="surface">apps</md-icon>
             </button>
             <md-fab size="medium">
               <md-icon slot="icon" variant="surface">edit</md-icon>
@@ -414,25 +414,25 @@
         <div style="flex: 1; display: flex; flex-direction: column;">
           <div style="flex: 0; display: flex;padding:10px">
             <div style="flex:1;display: flex; align-items: center">
-              <span style="padding: 0px 10px;line-height: 0">
-                <md-icon>inbox</md-icon>
-              </span>
-              <h2 style="flex: 1; font-size: 24px;">Документооборот</h2>
-              <div class="search">
-                <md-icon>search</md-icon>
-                <input style="width: 248px; outline: none; border: none; background: none" type="text">
-                <md-icon>tune</md-icon>
+              <div style="flex:1;display: flex; margin-left: 50px; line-height: 1">
+                <md-icon class="top-icon">inbox</md-icon>
+                <h2 class="top-text">Документооборот</h2>
               </div>
-              <span style="padding: 0px 10px;">
+              <div class="search">
+                <span style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center"><md-icon>search</md-icon></span>
+                <input placeholder="Искать по системе" type="text">
+                <span style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center"><md-icon>tune</md-icon></span>
+              </div>
+              <span style="margin-left: 16px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center">
                 <md-standard-icon-button>
                   <md-icon>notifications_active</md-icon>
                 </md-standard-icon-button>
               </span>
               <div class="login">
                 <div id="app" class="logo"></div>
-                <div>
-                  <div style="font-size: 16px;">Мария Христорождественская</div>
-                  <div>Финансовый отдел</div>
+                <div class="login-name">
+                  <div style="font-size: 16px;line-height: 24px;">Мария Христорождественская</div>
+                  <div style="color: var(--md-sys-color-on-surface-variant)">Финансовый отдел</div>
                 </div>
                 <span style="padding: 20px">
                   <md-icon>expand_more</md-icon>
@@ -442,8 +442,8 @@
           </div>
           <div class="body">
             <div class="table">
-              <div style="flex: 0 0 50px; display: flex;flex-direction: column;">
-                  <div>
+              <div style="flex: 0 0 48px; display: flex;flex-direction: column;margin-bottom: 12px;">
+                  <div style="padding-left: 18px; height: 48px; display: flex; align-items: center;">
                     <md-text-button>
                       Экспорт
                       <md-icon slot="icon">download</md-icon>

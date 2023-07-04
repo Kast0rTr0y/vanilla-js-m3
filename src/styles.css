@@ -3,6 +3,8 @@
   --logo-color-main: #002342;
   --navigattion-button-icon-color: var(--md-sys-color-on-surface);
   --navigattion-button-text-color: var(--md-sys-color-on-surface-variant);
+  --md-fab-icon-color: var(--md-sys-color-on-tertiary-container);
+  /*--md-fab-container-color*/
   /* --md-switch-selected-track-color: blue;
   --md-switch-selected-container-color: red; */
   /*--md-filled-field-content-color: red;*/
@@ -37,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 14px;
+  line-height: 20px;
 }
 header {
   display: flex;
@@ -126,7 +129,7 @@ main {
     display: none;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1438px) {
   .md3-navigation-submenu {
     display: none;
   }
@@ -263,16 +266,29 @@ main {
 md-icon[filled] {
   --md-icon-font-variation-settings: 'FILL' 1;
 }
+@media screen and (max-width: 1180px) {
+  .top-icon {
+    display: none;
+  }
+}
 .search {
   display: inline-flex;
   flex: 0;
   background-color: var(--md-sys-color-surface-variant);
-  padding: 10px;
+  /*padding: 10px;*/
   border-radius: 9999px;
   height: 56px;
   box-sizing: border-box;
   align-items: center;
   color: var(--md-sys-color-on-surface-variant);
+}
+.search input {
+  font-size: 16px;
+  /*padding: 0px 10px;*/
+  width: 260px;
+  outline: none;
+  border: none;
+  background: none
 }
 .logo {
   margin:10px;
@@ -285,6 +301,22 @@ md-icon[filled] {
   display: flex;
   align-items: center;
   height: 56px;
+  color: var(--md-sys-color-on-surface)
+}
+@media screen and (max-width: 1160px) {
+  .login-name {
+    display: none;
+  }
+}
+.top-text {
+  margin-left: 8px;
+  flex: 1;
+  font-size: 24px;
+}
+@media screen and (max-width: 925px) {
+  .top-text {
+    display: none;
+  }
 }
 .body {
   flex: 1 0 10vh;
@@ -300,13 +332,14 @@ md-icon[filled] {
   border-radius:24px;
 }
 .table-header {
-  flex: 0 0 50px;
+  flex: 0 0 48px;
   display: flex;
   flex-direction: column;
 }
 .table-header-row {
   display: flex;
   align-items: center;
+  margin-left: 16px;
 }
 .table-body {
   flex: 1 0 10vh;
@@ -316,13 +349,14 @@ md-icon[filled] {
 .table-row {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--md-sys-color-outline);
+  border-bottom: 1px solid var(--md-sys-color-inverse-on-surface);
   color: var(--md-sys-color-on-surface);
   height: 48px;
   box-sizing: border-box;
+  margin-left: 16px;
 }
 .table-row:first-child {
-  border-top: 1px solid var(--md-sys-color-outline);
+  border-top: 1px solid var(--md-sys-color-inverse-on-surface);
 }
 .table-row:last-child {
   border-bottom: none;
