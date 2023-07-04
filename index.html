@@ -18,615 +18,183 @@
   </head>
 
   <body>
-<!--    <header></header>-->
+    <header id="app"></header>
     <main>
-      <div style="display: flex; flex: 1">
-        <div class="md3-navigation">
-          <div class="md3-navigation-header">
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <md-ripple class="md3-navigation-tab__ripple"></md-ripple>
-              <md-icon style="--md-icon-size:40px;--md-icon-color:var(--app-icon-color)" size="40" slot="icon" variant="surface">apps</md-icon>
-            </button>
-            <md-fab size="medium" variant="primary">
-              <md-icon slot="icon" variant="surface">edit</md-icon>
-            </md-fab>
+      <div style="display: flex; flex-direction: column; flex: 3">
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-on-primary);background-color: var(--md-sys-color-primary)">
+            <div>Primary</div><div>P-40(80)</div>
           </div>
-          <div class="md3-navigation-main">
-            <button class="md3-navigation-tab md3-navigation-tab--active">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">work</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>work</md-icon>
-                </span>
-                <md-badge></md-badge>
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Моя работа
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">move_to_inbox</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>move_to_inbox</md-icon>
-                </span>
-  <!--              <md-badge></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Запросы в работе
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">inbox</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>inbox</md-icon>
-                </span>
-  <!--              <md-badge></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Мои докменты
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">account_balance_wallet</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>account_balance_wallet</md-icon>
-                </span>
-  <!--              <md-badge></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Мой доход
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">airplane_ticket</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>airplane_ticket</md-icon>
-                </span>
-  <!--              <md-badge></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Мои командир...
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">calendar_month</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>calendar_month</md-icon>
-                </span>
-                <md-badge value="1"></md-badge>
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                План отпусков
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">quick_reference</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>quick_reference</md-icon>
-                </span>
-  <!--              <md-badge value="1"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Норматив
-                ные док...
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">frame_person</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>frame_person</md-icon>
-                </span>
-                <md-badge value="99"></md-badge>
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Подбор персонала
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">clinical_notes</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>clinical_notes</md-icon>
-                </span>
-  <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Кадровые документы
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">account_balance</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>account_balance</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Финансо
-                вые доку...
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">badge</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>badge</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Личные дела
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">leaderboard</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>leaderboard</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Опросы
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">cases</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>cases</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Комплект документов
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">inbox</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>inbox</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Доступные документы
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">search</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>search</md-icon>
-                </span>
-                <!--<md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Поисковые запросы
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">star</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>star</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Избранное
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">design_services</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>design_services</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Ресурсы
-              </span>
-            </button>
-            <button class="md3-navigation-tab">
-              <md-focus-ring inward></md-focus-ring>
-              <span  class="md3-navigation-tab__icon-content">
-                <span class="md3-navigation-tab__active-indicator"></span>
-                <span class="md3-navigation-tab__icon">
-                  <md-icon slot="icon">event</md-icon>
-                </span>
-                <span class="md3-navigation-tab__icon md3-navigation-tab__icon--active">
-                  <md-icon slot="icon" filled>event</md-icon>
-                </span>
-                <!--              <md-badge value="99"></md-badge>-->
-              </span>
-              <span class="md3-navigation-tab__label-text">
-                Календарь
-              </span>
-            </button>
+          <div class="colors" style="color: var(--md-sys-color-on-secondary);background-color: var(--md-sys-color-secondary)">
+            <div>Secondary</div><div>S-40(80)</div>
           </div>
-          <div style="width:100%;flex: 0 0 92px;display: flex; justify-content: center; align-items: center;">
-            <svg width="27" height="47" viewBox="0 0 27 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_54299_149356)">
-                <path d="M21.6506 46.9998V42.1653H2.67114V16.7314H7.66203V37.8212H17.7844V16.7314H22.705V37.8212H26.0088V46.9998H21.6506Z" fill="var(--logo-color-main)"/>
-                <path d="M14.0799 4.90479H11.7391V7.21695H14.0799V4.90479Z" fill="#0000FF"/>
-                <path d="M4.70971 10.7552C2.10883 10.7552 0 8.65322 0 6.06079C0 3.46836 2.10883 1.29633 4.70971 1.3664C7.3106 1.3664 9.41942 3.46836 9.41942 6.06079C9.41942 8.65322 7.3106 10.7552 4.70971 10.7552ZM4.70971 3.60849C3.37412 3.60849 2.31971 4.65948 2.31971 5.99072C2.31971 7.32197 3.37412 8.37295 4.70971 8.37295C6.0453 8.37295 7.09971 7.32197 7.09971 5.99072C7.09971 4.72954 6.0453 3.60849 4.70971 3.60849Z" fill="url(#paint0_linear_54299_149356)"/>
-                <path d="M16.4558 12.1213V0L26.9999 6.09571L16.4558 12.1213ZM18.7755 3.99374V8.12761L22.3605 6.02564L18.7755 3.99374Z" fill="url(#paint1_linear_54299_149356)"/>
-              </g>
-              <defs>
-                <linearGradient id="paint0_linear_54299_149356" x1="0" y1="6.06079" x2="9.41942" y2="6.06079" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FF0057"/>
-                  <stop offset="0.95" stop-color="#FF0057"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear_54299_149356" x1="16.4558" y1="6.06067" x2="26.9999" y2="6.06067" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FF0057"/>
-                  <stop offset="0.95" stop-color="#FF0057"/>
-                </linearGradient>
-                <clipPath id="clip0_54299_149356">
-                  <rect width="27" height="47" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
+          <div class="colors" style="color: var(--md-sys-color-on-tertiary);background-color: var(--md-sys-color-tertiary)">
+            <div>Tertiary</div><div>T-40(80)</div>
           </div>
         </div>
-        <div class="md3-navigation-submenu" style="z-index: 10">
-          <button class="md3-navigation-item md3-navigation-item--active">
-            <md-focus-ring inward></md-focus-ring>
-            <md-ripple></md-ripple>
-            <span style="display: inline-flex; align-items: center; width: 100%">
-              <span style="padding: 0px 10px">
-                <md-icon variant="surface">folder</md-icon>
-              </span>
-              <span >Черновики</span>
-            </span>
-          </button>
-          <button class="md3-navigation-item">
-            <md-focus-ring inward></md-focus-ring>
-            <md-ripple></md-ripple>
-            <span style="display: inline-flex; align-items: center; width: 100%">
-              <span style="padding: 0px 10px">
-                <md-icon variant="surface">folder</md-icon>
-              </span>
-              <span>Все созданные мной</span>
-            </span>
-          </button>
-          <button class="md3-navigation-item">
-            <md-focus-ring inward></md-focus-ring>
-            <md-ripple></md-ripple>
-            <span style="display: inline-flex; align-items: center; width: 100%">
-              <span style="padding: 0px 10px">
-                <md-icon variant="surface">folder</md-icon>
-              </span>
-              <span>Резолюция в работе</span>
-            </span>
-          </button>
-          <button class="md3-navigation-item">
-            <md-focus-ring inward></md-focus-ring>
-            <md-ripple></md-ripple>
-            <span style="display: inline-flex; align-items: center; width: 100%">
-              <span style="padding: 0px 10px">
-                <md-icon variant="surface">folder</md-icon>
-              </span>
-              <span>Избранное</span>
-            </span>
-          </button>
-          <button class="md3-navigation-item">
-            <md-focus-ring inward></md-focus-ring>
-            <md-ripple></md-ripple>
-            <span style="display: inline-flex; align-items: center; width: 100%">
-              <span style="padding: 0px 10px">
-                <md-icon variant="surface">folder</md-icon>
-              </span>
-              <span style="flex:1; display: inline-flex; justify-content: flex-start">Ожидает отправки почтой</span>
-              <span style="padding: 0px 10px">100+</span>
-            </span>
-          </button>
-          <button class="md3-navigation-item">
-            <md-focus-ring inward></md-focus-ring>
-            <md-ripple></md-ripple>
-            <span style="display: inline-flex; align-items: center; width: 100%">
-              <span style="padding: 0px 10px">
-                <md-icon variant="surface">folder</md-icon>
-              </span>
-              <span>Все созданные мной</span>
-            </span>
-          </button>
-        </div>
-        <div style="flex: 1; display: flex; flex-direction: column;">
-          <div style="flex: 0; display: flex;padding:10px">
-            <div style="flex:1;display: flex; align-items: center">
-              <div style="flex:1;display: flex; margin-left: 50px; line-height: 1">
-                <md-icon class="top-icon">inbox</md-icon>
-                <h2 class="top-text">Документооборот</h2>
-              </div>
-              <div class="search">
-                <span style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center"><md-icon>search</md-icon></span>
-                <input placeholder="Искать по системе" type="text">
-                <span style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center"><md-icon>tune</md-icon></span>
-              </div>
-              <span style="margin-left: 16px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center">
-                <md-standard-icon-button>
-                  <md-icon>notifications_active</md-icon>
-                </md-standard-icon-button>
-              </span>
-              <div class="login">
-                <div id="app" class="logo"></div>
-                <div class="login-name">
-                  <div style="font-size: 16px;line-height: 24px;">Мария Христорождественская</div>
-                  <div style="color: var(--md-sys-color-on-surface-variant)">Финансовый отдел</div>
-                </div>
-                <span style="padding: 20px">
-                  <md-icon>arrow_drop_down</md-icon>
-                </span>
-              </div>
-            </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-primary);background-color: var(--md-sys-color-on-primary)">
+            <div>On Primary</div><div>P-100(20)</div>
           </div>
-          <div class="body">
-            <div class="table">
-              <div style="flex: 0 0 48px; display: flex;flex-direction: column;margin-bottom: 12px;">
-                  <div style="padding-left: 18px; height: 48px; display: flex; align-items: center;">
-                    <md-text-button>
-                      Экспорт
-                      <md-icon slot="icon">download</md-icon>
-                    </md-text-button>
-                    <md-text-button>
-                      В комплект
-                      <md-icon slot="icon">mail</md-icon>
-                    </md-text-button>
-                    <md-text-button>
-                      Ещё
-                      <md-icon slot="icon">more_vert</md-icon>
-                    </md-text-button>
-                    <div style="flex:1;display: flex; flex-direction: row-reverse; align-items: center;">
-                      <md-icon style="margin-left:-10px;">arrow_drop_down</md-icon>
-                      <md-standard-icon-button>
-                        <md-icon>reorder</md-icon>
-                      </md-standard-icon-button>
-                      <md-standard-icon-button>
-                        <md-icon>settings</md-icon>
-                      </md-standard-icon-button>
-                      <md-standard-icon-button>
-                        <md-icon>filter_alt</md-icon>
-                      </md-standard-icon-button>
-                    </div>
-                  </div>
-                </div>
-              <div class="table-header">
-                  <div class="table-header-row">
-                    <div style="flex: 0 0 50px"><md-checkbox indeterminate></md-checkbox></div>
-                    <div style="flex: 1 0 50px">Номер</div>
-                    <div style="flex: 1 0 50px">Дата</div>
-                    <div style="flex: 1 0 50px">Тип</div>
-                    <div style="flex: 1 0 50px">Автор</div>
-                    <div style="flex: 1 0 50px">Создал</div>
-                  </div>
-                </div>
-              <div class="table-body">
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
-                    <div style="flex: 1 0 50px">26.04.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
-                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00209-18--3-21</div>
-                    <div style="flex: 1 0 50px">28.12.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Анохин Э. А.</div>
-                    <div style="flex: 1 0 50px">Токарев А. К.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
-                    <div style="flex: 1 0 50px">РД-00005-2-1-21</div>
-                    <div style="flex: 1 0 50px">29.05.2022</div>
-                    <div style="flex: 1 0 50px">ОРД</div>
-                    <div style="flex: 1 0 50px">Миронова Э. Д.</div>
-                    <div style="flex: 1 0 50px">Сергеева А. Я.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00008-1-21</div>
-                    <div style="flex: 1 0 50px">15.07.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Малахова Э. М.</div>
-                    <div style="flex: 1 0 50px">Романова А. Д.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00012-1-20</div>
-                    <div style="flex: 1 0 50px">25.11.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Казаков А. Л.</div>
-                    <div style="flex: 1 0 50px">Анисимова К. А.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00003-2-20</div>
-                    <div style="flex: 1 0 50px">10.07.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Костин А. М.</div>
-                    <div style="flex: 1 0 50px">Левина Е. С.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00003-1-20</div>
-                    <div style="flex: 1 0 50px">14.06.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Попов И. М.</div>
-                    <div style="flex: 1 0 50px">Петрова С. М.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00031-1-21</div>
-                    <div style="flex: 1 0 50px">15.02.2022</div>
-                    <div style="flex: 1 0 50px">НД</div>
-                    <div style="flex: 1 0 50px">Мельников Е. И.</div>
-                    <div style="flex: 1 0 50px">Селезнев В. В.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">05-00215</div>
-                    <div style="flex: 1 0 50px">23.02.2022</div>
-                    <div style="flex: 1 0 50px">ОРД</div>
-                    <div style="flex: 1 0 50px">Егоров С. Я.</div>
-                    <div style="flex: 1 0 50px">Комарова К. Л.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">00002-21</div>
-                    <div style="flex: 1 0 50px">15.10.2022</div>
-                    <div style="flex: 1 0 50px">ОРД</div>
-                    <div style="flex: 1 0 50px">Казаков Д. Г.</div>
-                    <div style="flex: 1 0 50px">Наумов Д. А.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>
-                    <div style="flex: 1 0 50px">26.04.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>
-                    <div style="flex: 1 0 50px">Ефимов М. М.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00209-18--3-21</div>
-                    <div style="flex: 1 0 50px">28.12.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Анохин Э. А.</div>
-                    <div style="flex: 1 0 50px">Токарев А. К.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">РД-00005-2-1-21</div>
-                    <div style="flex: 1 0 50px">29.05.2022</div>
-                    <div style="flex: 1 0 50px">ОРД</div>
-                    <div style="flex: 1 0 50px">Миронова Э. Д.</div>
-                    <div style="flex: 1 0 50px">Сергеева А. Я.</div>
-                  </div>
-                  <div class="table-row">
-                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>
-                    <div style="flex: 1 0 50px">ВХ-00008-1-21</div>
-                    <div style="flex: 1 0 50px">15.07.2022</div>
-                    <div style="flex: 1 0 50px">Резолюция</div>
-                    <div style="flex: 1 0 50px">Малахова Э. М.</div>
-                    <div style="flex: 1 0 50px">Романова А. Д.</div>
-                  </div>
-<!--                  <div class="table-row">-->
-<!--                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>-->
-<!--                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>-->
-<!--                    <div style="flex: 1 0 50px">26.04.2022</div>-->
-<!--                    <div style="flex: 1 0 50px">Резолюция</div>-->
-<!--                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>-->
-<!--                    <div style="flex: 1 0 50px">Ефимов М. М.</div>-->
-<!--                  </div>-->
-<!--                  <div class="table-row">-->
-<!--                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>-->
-<!--                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>-->
-<!--                    <div style="flex: 1 0 50px">26.04.2022</div>-->
-<!--                    <div style="flex: 1 0 50px">Резолюция</div>-->
-<!--                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>-->
-<!--                    <div style="flex: 1 0 50px">Ефимов М. М.</div>-->
-<!--                  </div>-->
-<!--                  <div class="table-row">-->
-<!--                    <div style="flex: 0 0 50px"><md-checkbox></md-checkbox></div>-->
-<!--                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>-->
-<!--                    <div style="flex: 1 0 50px">26.04.2022</div>-->
-<!--                    <div style="flex: 1 0 50px">Резолюция</div>-->
-<!--                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>-->
-<!--                    <div style="flex: 1 0 50px">Ефимов М. М.</div>-->
-<!--                  </div>-->
-<!--                  <div class="table-row">-->
-<!--                    <div style="flex: 0 0 50px"><md-checkbox checked></md-checkbox></div>-->
-<!--                    <div style="flex: 1 0 50px">ВХ-00011-1-21</div>-->
-<!--                    <div style="flex: 1 0 50px">26.04.2022</div>-->
-<!--                    <div style="flex: 1 0 50px">Резолюция</div>-->
-<!--                    <div style="flex: 1 0 50px">Тимофеева С. Н.</div>-->
-<!--                    <div style="flex: 1 0 50px">Ефимов М. М.</div>-->
-<!--                  </div>-->
-                </div>
-            </div>
+          <div class="colors" style="color: var(--md-sys-color-secondary);background-color: var(--md-sys-color-on-secondary)">
+            <div>On Secondary</div><div>S-100(20)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-tertiary);background-color: var(--md-sys-color-on-tertiary)">
+            <div>On Tertiary</div><div>T-100(20)</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-on-primary-container);background-color: var(--md-sys-color-primary-container)">
+            <div>Primary Container</div><div>P-90(30)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-secondary-container);background-color: var(--md-sys-color-secondary-container)">
+            <div>Secondary Container</div><div>S-90(30)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-tertiary-container);background-color: var(--md-sys-color-tertiary-container)">
+            <div>Tertiary Container</div><div>T-90(30)</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-primary-container);background-color: var(--md-sys-color-on-primary-container)">
+            <div>On Primary Container</div><div>P-10(90)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-secondary-container);background-color: var(--md-sys-color-on-secondary-container)">
+            <div>On Secondary Container</div><div>S-10(90)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-tertiary-container);background-color: var(--md-sys-color-on-tertiary-container)">
+            <div>On Tertiary Container</div><div>T-10(90)</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-on-primary-fixed);background-color: var(--md-sys-color-primary-fixed)">
+            <div>Primary Fixed</div><div>P-90</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-primary-fixed-variant);background-color: var(--md-sys-color-primary-fixed-dim)">
+            <div>Primary Fixed Dim</div><div>P-80</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-secondary-fixed);background-color: var(--md-sys-color-secondary-fixed)">
+            <div>Secondary Fixed</div><div>S-90</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-secondary-fixed-variant);background-color: var(--md-sys-color-secondary-fixed-dim)">
+            <div>Secondary Fixed Dim</div><div>S-80</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-tertiary-fixed);background-color: var(--md-sys-color-tertiary-fixed)">
+            <div>Tertiary Fixed</div><div>T-90</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-tertiary-fixed-variant);background-color: var(--md-sys-color-tertiary-fixed-dim)">
+            <div>Tertiary Fixed Dim</div><div>T-80</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-primary-fixed);background-color: var(--md-sys-color-on-primary-fixed)">
+            <div>On Primary Fixed</div><div>P-10</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-secondary-fixed);background-color: var(--md-sys-color-on-secondary-fixed)">
+            <div>On Secondary Fixed</div><div>S-10</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-tertiary-fixed);background-color: var(--md-sys-color-on-tertiary-fixed)">
+            <div>On Tertiary Fixed</div><div>T-10</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-primary-fixed-dim);background-color: var(--md-sys-color-on-primary-fixed-variant)">
+            <div>On Primary Fixed Variant</div><div>P-30</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-secondary-fixed-dim);background-color: var(--md-sys-color-on-secondary-fixed-variant)">
+            <div>On Secondary Fixed Variant</div><div>S-30</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-tertiary-fixed-dim);background-color: var(--md-sys-color-on-tertiary-fixed-variant)">
+            <div>On Tertiary Fixed Variant</div><div>T-30</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface-dim)">
+            <div>Surface Dim</div><div>N-87(6)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface)">
+            <div>Surface</div><div>N-98(6)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface-bright)">
+            <div>Surface Bright</div><div>N-98(24)</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface-container-lowest)">
+            <div>Surface Container Lowest</div><div>N-100(4)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface-container-low)">
+            <div>Surface Container Low</div><div>N-96(10)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface-container)">
+            <div>Surface Container</div><div>N-94(12)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface-container-high)">
+            <div>Surface Container High</div><div>N-92(17)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-on-surface);background-color: var(--md-sys-color-surface-container-highest)">
+            <div>Surface Container Highest</div><div>N-90(22)</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: var(--md-sys-color-surface);background-color: var(--md-sys-color-on-surface)">
+            <div>On Surface</div><div>N-10(90)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-surface);background-color: var(--md-sys-color-on-surface-variant)">
+            <div>On Surface Variant</div><div>NV-30(80)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-surface);background-color: var(--md-sys-color-outline)">
+            <div>Outline</div><div>NV-50(60)</div>
+          </div>
+          <div class="colors" style="color: var(--md-sys-color-inverse-surface);background-color: var(--md-sys-color-outline-variant)">
+            <div>Outline Variant</div><div>NV-80(30)</div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; flex: 1">
+        <div>
+          <div class="colors" style="color: var(--md-sys-color-on-error);background-color: var(--md-sys-color-error)">
+            <div>Error</div><div>E-40(80)</div>
+          </div>
+        </div>
+        <div>
+          <div class="colors" style="color: var(--md-sys-color-error);background-color: var(--md-sys-color-on-error)">
+            <div>On Error</div><div>E-100(80)</div>
+          </div>
+        </div>
+        <div>
+          <div class="colors" style="color: var(--md-sys-color-on-error-container);background-color: var(--md-sys-color-error-container)">
+            <div>Error Container</div><div>E-90(30)</div>
+          </div>
+        </div>
+        <div>
+          <div class="colors" style="color: var(--md-sys-color-error-container);background-color: var(--md-sys-color-on-error-container)">
+            <div>On Error Container</div><div>E-10(90)</div>
+          </div>
+        </div>
+        <div><div class="colors"></div></div>
+        <div><div class="colors"></div></div>
+        <div><div class="colors"></div></div>
+        <div>
+          <div class="colors" style="color: var(--md-sys-color-inverse-on-surface);background-color: var(--md-sys-color-inverse-surface)">
+            <div>Inverse Surface</div><div>N-20(90)</div>
+          </div>
+        </div>
+        <div>
+          <div class="colors" style="color: var(--md-sys-color-inverse-surface);background-color: var(--md-sys-color-inverse-on-surface)">
+            <div>Inverse On Surface</div><div>N-95(20)</div>
+          </div>
+        </div>
+        <div>
+          <div class="colors" style="color: var(--md-sys-color-on-primary-container);background-color: var(--md-sys-color-inverse-primary)">
+            <div>Inverse Primary</div><div>P-80(40)</div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div class="colors" style="color: white;background-color: var(--md-sys-color-scrim)">
+            <div>Scrim</div><div>N-0</div>
+          </div>
+          <div class="colors" style="color: white;background-color: var(--md-sys-color-shadow)">
+            <div>Scrim</div><div>N-0</div>
           </div>
         </div>
       </div>
