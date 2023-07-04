@@ -1,13 +1,20 @@
 :root {
   color-scheme: light dark;
-  --logo-color-main: #fff;
-  --navigattion-button-icon-color: var(--md-sys-color-inverse-on-surface);
-  --navigattion-button-text-color: var(--md-sys-color-inverse-on-surface);
-  --app-icon-color: var(--md-sys-color-inverse-on-surface);
-  --navigation-active-indicator-color: var(--md-sys-color-primary);
-  --navigation-tab-hover-color: var(--md-sys-color-inverse-on-surface);
-  --navigation-background-color: var(--md-sys-color-inverse-surface);
-  --navigation-border-color: var(--md-sys-color-inverse-surface);
+  --logo-color-main: #002342;
+  --navigattion-button-icon-color: var(--md-sys-color-on-surface);
+  /*var(--md-sys-color-inverse-on-surface);*/
+  --navigattion-button-text-color: var(--md-sys-color-on-surface-variant);
+  /*var(--md-sys-color-inverse-on-surface);*/
+  --app-icon-color: var(--md-sys-color-on-surface);
+  /*var(--md-sys-color-inverse-on-surface);*/
+  --navigation-active-indicator-color: var(--md-sys-color-secondary-container);
+  /*var(--md-sys-color-primary);*/
+  --navigation-tab-hover-color: var(--md-sys-color-on-surface);
+  /*var(--md-sys-color-inverse-on-surface);*/
+  --navigation-background-color: var(--md-sys-color-surface-container);
+  /*var(--md-sys-color-inverse-surface);*/
+  --navigation-border-color: var(--md-sys-color-outline-variant);
+  /*var(--md-sys-color-inverse-surface);*/
   /*var(--md-sys-color-secondary-container);*/
   /*var(--md-sys-color-on-surface);*/
   --md-fab-icon-color: var(--md-sys-color-on-tertiary-container);
@@ -24,7 +31,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --logo-color-main: #002342;
+    --logo-color-main: #fff;
   }
 }
 html {
