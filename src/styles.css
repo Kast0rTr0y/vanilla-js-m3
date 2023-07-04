@@ -266,7 +266,7 @@ main {
 md-icon[filled] {
   --md-icon-font-variation-settings: 'FILL' 1;
 }
-@media screen and (max-width: 1180px) {
+@media screen and (min-width: 1161px) and (max-width: 1180px) {
   .top-icon {
     display: none;
   }
@@ -303,6 +303,11 @@ md-icon[filled] {
   height: 56px;
   color: var(--md-sys-color-on-surface)
 }
+@media screen and (min-width: 1439px) and (max-width: 1500px) {
+  .login-name {
+    display: none;
+  }
+}
 @media screen and (max-width: 1160px) {
   .login-name {
     display: none;
@@ -315,6 +320,9 @@ md-icon[filled] {
 }
 @media screen and (max-width: 925px) {
   .top-text {
+    display: none;
+  }
+  .top-icon {
     display: none;
   }
 }
