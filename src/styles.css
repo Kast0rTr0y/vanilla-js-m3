@@ -12,8 +12,10 @@
   --navigation-tab-hover-color: var(--md-sys-color-on-surface);
   /*var(--md-sys-color-inverse-on-surface);*/
   --navigation-background-color: var(--md-sys-color-surface-container);
+  /*var(--md-sys-color-surface-container-high);*/
   /*var(--md-sys-color-inverse-surface);*/
   --navigation-border-color: var(--md-sys-color-outline-variant);
+  /*var(--md-sys-color-surface-container-high);*/
   /*var(--md-sys-color-inverse-surface);*/
   /*var(--md-sys-color-secondary-container);*/
   /*var(--md-sys-color-on-surface);*/
