@@ -37,8 +37,10 @@ main {
   display: flex;
 }
 .popup {
+  position: fixed;
+  top:0px;
   flex-direction: column;
-  position: absolute;
+  /*position: absolute;*/
   z-index: 100;
   padding: 10px;
   background-color: var(--md-sys-color-background);
@@ -50,9 +52,9 @@ main {
   flex-direction: row-reverse;
   padding-bottom: 12px;
 }
-#popup_show {
+.popup_show {
   border: 3px solid var(--md-sys-color-outline);
-  background-color: var(--md-sys-color-primary);
+  /*background-color: var(--md-sys-color-primary);*/
   color: var(--md-sys-color-on-primary);
   outline: none;
   border-radius: 50px;

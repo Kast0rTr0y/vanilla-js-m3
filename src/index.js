@@ -28,30 +28,7 @@ import "@material/web/list/list.js";
 import "@material/web/list/list-item.js";
 import "@material/web/radio/radio.js";
 
-import {
-  themeFromSourceColor,
-  argbFromHex,
-  applyTheme
-} from "@material/material-color-utilities";
-
 import "./header.js";
-
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", ({ matches }) => {
-    const color = window.localStorage.getItem("color") || "#6750A4";
-    if (matches) {
-      applyTheme(themeFromSourceColor(argbFromHex(color)), {
-        target: document.querySelector(":root"),
-        dark: true
-      });
-    } else {
-      applyTheme(themeFromSourceColor(argbFromHex(color)), {
-        target: document.querySelector(":root"),
-        dark: false
-      });
-    }
-  });
 
 document.addEventListener("DOMContentLoaded",()=> {
     Array.from(document.getElementsByClassName("md3-navigation-tab")).forEach(element=>element.addEventListener("click", (event) => {
