@@ -27,6 +27,7 @@ import "@material/web/iconbutton/standard-icon-button.js";
 import "@material/web/list/list.js";
 import "@material/web/list/list-item.js";
 import "@material/web/radio/radio.js";
+import './simple.js';
 
 import "./header.js";
 
