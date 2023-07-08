@@ -1,27 +1,10 @@
 :root {
   color-scheme: light dark;
-  --md-sys-color-background: #FEF7FF;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --md-sys-color-background: #141218;
-  }
 }
 html {
-  height: 100%;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-}
-body {
-  height: 100vh;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: var(--md-sys-color-background);
-  box-sizing: inherit;
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  line-height: 24px;
 }

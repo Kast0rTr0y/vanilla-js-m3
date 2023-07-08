@@ -1,7 +1,9 @@
 import {html, css, LitElement} from 'lit';
 
 export class SimpleGreeting extends LitElement {
-    static styles = css`:host { color: red }`;
+    static styles = css`:host { 
+      
+    }`;
 
     static properties = {
         name: {type: String},
