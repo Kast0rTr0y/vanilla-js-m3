@@ -7,11 +7,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@material/material-color-utilities": "0.2.4",
-    "@material/web": "1.0.0-pre.12",
     "lit": "^2.7.6",
-    "parcel": "2.8.3",
-    "vanilla-colorful": "0.7.2"
+    "parcel": "2.8.3"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",

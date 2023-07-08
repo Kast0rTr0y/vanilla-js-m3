@@ -1,16 +1,18 @@
 :root {
   color-scheme: light dark;
+  --md-sys-color-background: #FEF7FF;
 }
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-background: #141218;
+  }
+}
 html {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-}
-span {
-  font-family: "Roboto", sans-serif;
 }
 body {
   height: 100vh;
@@ -20,49 +22,6 @@ body {
   box-sizing: inherit;
   display: flex;
   flex-direction: column;
-  font-size: 10px;
-  line-height: 15px;
-}
-header {
-  display: flex;
-  flex-direction: row-reverse;
-  height: 64px;
-  min-height: 64px;
-  padding: 12px;
-  z-index: 100;
-  box-sizing: border-box;
-}
-main {
-  /*flex: 1 0 10vh;*/
-  display: flex;
-}
-.popup {
-  position: fixed;
-  top:0px;
-  flex-direction: column;
-  /*position: absolute;*/
-  z-index: 100;
-  padding: 10px;
-  background-color: var(--md-sys-color-background);
-  border-radius: 10px;
-  box-shadow: 0 0 5px 1px var(--md-sys-color-shadow);
-}
-.popup_header {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-bottom: 12px;
-}
-.popup_show {
-  border: 3px solid var(--md-sys-color-outline);
-  /*background-color: var(--md-sys-color-primary);*/
-  color: var(--md-sys-color-on-primary);
-  outline: none;
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
-}
-.colors {
-  flex: 1;
-  height: 50px;
-  padding: 10px;
+  font-size: 16px;
+  line-height: 24px;
 }
