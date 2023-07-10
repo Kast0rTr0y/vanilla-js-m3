@@ -10,8 +10,7 @@ import '../widgets/docs'
 import '../widgets/card'
 import '../widgets/large-card'
 import '../widgets/divider'
-import '../widgets/picker'
-import {changeTheme} from '../theme/theme'
+import '../theme/theme'
 
 export function sleep(ms) {
     return new Promise((res) => setTimeout(res, ms));
@@ -39,13 +38,3 @@ document.addEventListener("DOMContentLoaded",async () => {
     document.getElementById("md-documents-2").cards = await getCards();
     document.getElementById("md-documents-3").cards = await getCards();
 })
-
-window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", ({ matches }) => {
-        if (matches) {
-            changeTheme();
-        } else {
-            changeTheme();
-        }
-    });

@@ -40,8 +40,7 @@ export class Picker extends LitElement {
     }
 
     firstUpdated(changed) {
-        this.color = window.localStorage.getItem(this.name) || this.color
-        console.log(this.name, this.color);
+        this.color = window.localStorage.getItem(`${this.name}Color`) || this.color
     }
 
     render() {
@@ -61,7 +60,7 @@ export class Picker extends LitElement {
         this.renderRoot.querySelector("#popup").setAttribute("style", `display:flex;`);
         this.renderRoot.querySelector("hex-color-picker")
             .addEventListener("color-changed", (event) => {
-                window.localStorage.setItem(this.name, event.detail.value);
+                window.localStorage.setItem(`${this.name}Color`, event.detail.value);
                 this.color = event.detail.value;
                 changeTheme();
             });

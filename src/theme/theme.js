@@ -5,8 +5,8 @@ import {
     Scheme
 } from "@w3h/material-color-utilities";
 
-const getTheme = () => {
-    const primaryColor = window.localStorage.getItem('colorPrimary') || '#6750A4';
+export const getTheme = () => {
+    const primaryColor = window.localStorage.getItem('primaryColor') || '#6750A4';
     const secondaryColor = window.localStorage.getItem('secondaryColor') || '#958DA5';
     const tertiaryColor = window.localStorage.getItem('tertiaryColor') || '#B58392';
     const errorColor = window.localStorage.getItem('errorColor') || '#E46962';
@@ -45,4 +45,17 @@ export const changeTheme = () => {
         dark: window.matchMedia("(prefers-color-scheme: dark)").matches
     });
 }
+
+export Picker from '../widgets/picker'
+
 changeTheme();
+
+window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", ({ matches }) => {
+        if (matches) {
+            changeTheme();
+        } else {
+            changeTheme();
+        }
+    });
