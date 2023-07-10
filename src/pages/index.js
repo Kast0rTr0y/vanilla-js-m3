@@ -11,6 +11,7 @@ import '../widgets/card'
 import '../widgets/large-card'
 import '../widgets/divider'
 import '../theme/theme'
+import '../widgets/colors'
 
 const width = window.innerWidth;
 

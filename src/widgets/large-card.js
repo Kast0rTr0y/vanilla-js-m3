@@ -4,7 +4,7 @@ import '@material/web/button/filled-button'
 export class LargeCard extends LitElement {
     static styles = css`
       :host{
-        padding:10px;
+        padding:8px;
         flex: 1 0 300px;
       }
       :host slot {

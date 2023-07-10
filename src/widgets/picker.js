@@ -6,10 +6,10 @@ export class Picker extends LitElement {
       .popup{
         position: fixed;
         top:10px;
-        right: 10px;
+        right: 5px;
         flex-direction: column;
         z-index: 110;
-        padding: 10px;
+        padding: 0px;
         background-color: var(--md-sys-color-background);
         border-radius: 10px;
         box-shadow: 0 0 5px 1px var(--md-sys-color-shadow);
@@ -17,7 +17,12 @@ export class Picker extends LitElement {
       .popup_header {
         display: flex;
         flex-direction: row-reverse;
-        padding-bottom: 12px;
+        padding-top: 5px;
+      }
+      .popup_header > button {
+        background: none;
+        border: none;
+        outline: none;
       }
       #popup_show {
         border: 2px solid var(--md-sys-color-outline);
@@ -27,6 +32,9 @@ export class Picker extends LitElement {
         height: 40px;
         cursor: pointer;
         background-color: var(--button-color);
+      }
+      hex-color-picker {
+        margin: 18px;
       }
     `;
 
@@ -50,7 +58,7 @@ export class Picker extends LitElement {
             }
             </style>
             <div id="popup" class="popup" style="display:none;">
-            <div class="popup_header"><button @click="${this.hide}">x</button></div>
+            <div class="popup_header"><button @click="${this.hide}"><md-icon>close</md-icon></button></div>
             <hex-color-picker color=${this.color}></hex-color-picker>
         </div>
         <button id="popup_show" @click="${this.show}"></button>`;
