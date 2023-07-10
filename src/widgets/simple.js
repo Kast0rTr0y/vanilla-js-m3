@@ -15,7 +15,7 @@ export class SimpleGreeting extends LitElement {
     }
 
     render() {
-        return html`<p>Hello, ${this.name}!</p>`;
+        return html`<p>Hello, ${this.name}!<slot name="text"></slot></p>`;
     }
 }
 customElements.define('simple-greeting', SimpleGreeting);
