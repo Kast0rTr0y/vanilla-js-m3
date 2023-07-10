@@ -5,10 +5,10 @@ export class Picker extends LitElement {
     static styles = css`
       .popup{
         position: fixed;
-        top:0px;
-        right: 0px;
+        top:10px;
+        right: 10px;
         flex-direction: column;
-        z-index: 100;
+        z-index: 110;
         padding: 10px;
         background-color: var(--md-sys-color-background);
         border-radius: 10px;

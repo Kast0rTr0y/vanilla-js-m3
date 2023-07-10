@@ -2,6 +2,26 @@
   color-scheme: light dark;
   --md-menu-container-color: var(--md-sys-color-primary-container);
   --md-menu-item-list-item-container-color: var(--md-sys-color-primary-container);
+  --md-custom-color-red: #b91a24;
+  --md-custom-color-on-red: #ffffff;
+  --md-custom-color-red-container: #ffdad7;
+  --md-custom-color-red-on-container: #410004;
+  --md-custom-color-green: #006e2f;
+  --md-custom-color-on-green: #ffffff;
+  --md-custom-color-green-container: #6bff8f;
+  --md-custom-color-green-on-container: #002109;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-custom-color-red: #ffb3ad;
+    --md-custom-color-on-red: #68000a;
+    --md-custom-color-red-container: #930013;
+    --md-custom-color-red-on-container: #ffdad7;
+    --md-custom-color-green: #4ae176;
+    --md-custom-color-on-green: #003915;
+    --md-custom-color-green-container: #005321;
+    --md-custom-color-green-on-container: #6bff8f;
+  }
 }
 html {
   height: 100vh;
@@ -9,18 +29,22 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-  background-color: var(--md-sys-color-surface-container-high);
+  background-color: var(--md-sys-color-surface-variant);
 }
 body {
   margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 header {
   width: 100%;
   display: flex;
-  height: 50px;
+  height: 80px;
   padding: 12px;
-  position: fixed;
-  right: 0px;
+  /*position: fixed;*/
+  /*right: 0px;*/
   z-index: 100;
   box-sizing: border-box;
 }
@@ -28,11 +52,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 80px 20% 0px 20%;
+  padding: 0px 20% 0px 20%;
+  overflow-y: scroll;
 }
 @media screen and (max-width: 800px) {
   main {
-    padding: 80px 20px 0px 20px;
+    padding: 0px 16px 0px 16px;
   }
 }
 .root {
@@ -40,5 +65,23 @@ main {
   flex-direction: column;
   /*justify-content: center;*/
   align-items: flex-start;
-  z-index: 101;
+  z-index: 300;
+  position:absolute;
+}
+.fab-container {
+  position: absolute;
+  margin-left: -80px;
+}
+@media screen and (max-width: 800px) {
+  .fab-container {
+    z-index: 200;
+    margin: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 16px;
+  }
+  .root {
+    bottom: 0px;
+    right: 0px;
+  }
 }

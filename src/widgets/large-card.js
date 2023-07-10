@@ -1,4 +1,5 @@
 import {html, css, LitElement} from 'lit';
+import '@material/web/button/filled-button'
 
 export class LargeCard extends LitElement {
     static styles = css`
@@ -6,12 +7,16 @@ export class LargeCard extends LitElement {
         padding:10px;
         flex: 1 0 300px;
       }
+      :host slot {
+        font-size: var(--md-sys-typescale-body-large-font-size);
+        line-height: var(--md-sys-typescale-body-large-line-height);
+      }
       .surface {         
         position: relative;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
-        padding: 10px;
+        padding: 16px 16px 8px 16px;
         background-color: var(--md-sys-color-primary-container);
         color: var(--md-sys-color-on-primary-container);
       }
@@ -20,6 +25,7 @@ export class LargeCard extends LitElement {
       }
       .sub {
         display: flex;
+        padding: 12px 0px;
       }
       .icons {
         display: flex;
@@ -36,22 +42,37 @@ export class LargeCard extends LitElement {
       .comment {
         display: flex;
         flex-direction: column;
+        padding-top: 8px;
+        gap:4px;
       }
       .comment-body {
-        background-color: var(--md-sys-color-secondary-container);
-        color: var(--md-sys-color-on-secondary-container);
+        opacity: .7;
+        background-color: var(--md-sys-color-primary);
+        color: var(--md-sys-color-on-primary);
         border-radius: 10px;
         padding: 10px;
       }
       .status {
         display: flex;
+        height: 48px;
+        padding: 8px 0px;
+        box-sizing: border-box;
       }
       .state {
-        background-color: var(--md-sys-color-error);
-        color: var(--md-sys-color-on-error);
-        border-radius: 10px;
+        background-color: var(--md-custom-color-red-container);
+        color: var(--md-custom-color-red-on-container);
+        border-radius: 8px;
         flex: 1;
-        padding: 4px;
+        padding: 6px 6px;
+      }
+      .time {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        font-size: var(--md-sys-typescale-label-small-font-size);
+        line-height: var(--md-sys-typescale-label-small-line-height);
+        color: var(--md-sys-color-on-surface);
+        align-items: center;
       }
     `;
     static properties = {
@@ -65,7 +86,9 @@ export class LargeCard extends LitElement {
         iconSubText2:{type:String},
         commentHeader:{type:String},
         commentCard:{type:String},
-        state:{type:String}
+        state:{type:String},
+        stateTime:{type:Number},
+        button:{type:Boolean}
     };
 
     constructor() {
@@ -74,8 +97,8 @@ export class LargeCard extends LitElement {
 
     render() {
         return html`<div class="surface">
-            <md-elevation></md-elevation>
-            <md-ripple></md-ripple>
+            ${!this.button?html`<md-elevation></md-elevation>`:''}
+            ${!this.button?html`<md-ripple></md-ripple>`:''}
             <div class="body-small">${this.header}</div>
             <slot></slot>
             <div class="body-small">${this.subHeader}</div>
@@ -99,7 +122,17 @@ export class LargeCard extends LitElement {
             </div>
             <div class="status">
                 ${this.state && html`<div class="state body-medium">${this.state}</div>`}
+                ${this.stateTime && html`
+                    <div class="time">
+                        ${this.stateTime > 0 ? html`<svg xmlns="http://www.w3.org/2000/svg" fill="var(--md-custom-color-red)" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM253-253l227-227v-320q-134 0-227 93t-93 227q0 64 24 123t69 104Z"/></svg>`:
+                        html`<svg xmlns="http://www.w3.org/2000/svg" fill="var(--md-custom-color-green)" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-64-24-123t-69-104L480-480v-320q-134 0-227 93t-93 227q0 134 93 227t227 93Z"/></svg>`}
+                        ${Math.abs(this.stateTime)} минут
+                    </div>`}
             </div>
+            ${this.button && html`<md-filled-button style="">
+                <md-icon slot="icon">edit</md-icon>
+                Подписать
+            </md-filled-button>`}
         </div>`;
     }
 }
