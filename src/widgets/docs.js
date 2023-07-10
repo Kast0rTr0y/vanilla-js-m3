@@ -2,13 +2,16 @@ import {html, css, LitElement} from 'lit';
 
 export class Documents extends LitElement {
     static styles = css`
-        :host {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          background-color: var(--md-sys-color-background);
-          border-radius: 10px;
-        }
+      :host {
+        flex: 1 0 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--md-sys-color-background);
+        box-sizing: border-box;
+        overflow: hidden;
+      }
       .container {
         display: flex;
         overflow-x: scroll;
@@ -29,11 +32,10 @@ export class Documents extends LitElement {
     }
 
     render() {
-        if(this.cards.length) return html`<slot name="header"></slot>
+        return html`<slot name="header"></slot>
         <div class="container">
             <slot></slot>
         </div>`;
-        return html`<span>Loading...</span>`;
     }
 }
 customElements.define('md-documents', Documents);

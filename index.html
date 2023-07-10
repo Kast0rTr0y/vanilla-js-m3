@@ -15,6 +15,21 @@
   </head>
   <body>
     <header>
+      <div style="flex:0">
+        <div class="root" style="position:relative;">
+          <md-menu x-offset="0" y-offset="-57">
+            <md-menu-item headline="Text1"></md-menu-item>
+            <md-menu-item headline="Text2"></md-menu-item>
+            <md-menu-item headline="Text3"></md-menu-item>
+          </md-menu>
+        </div>
+        <md-fab variant="primary">
+          <md-icon slot="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M794-666 666-794l42-42q17-17 42.5-16.5T793-835l43 43q17 17 17 42t-17 42l-42 42Zm-42 42L248-120H120v-128l504-504 128 128Z"/></svg>
+          </md-icon>
+        </md-fab>
+      </div>
+      <div style="flex:1 0 10vw"></div>
       <md-color-picker name="primary" color="#6750A4"></md-color-picker>
       <md-color-picker name="secondary" color="#958DA5"></md-color-picker>
       <md-color-picker name="tertiary" color="#B58392"></md-color-picker>
@@ -22,53 +37,42 @@
       <md-color-picker name="neutral" color="#938F96"></md-color-picker>
       <md-color-picker name="neutralVariant" color="#938F99"></md-color-picker>
     </header>
-    <simple-greeting name="World">Loading...<p slot="text">test</p></simple-greeting>
-    <div class="root" style="position:relative;">
-      <md-fab variant="primary">
-        <md-icon slot="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M794-666 666-794l42-42q17-17 42.5-16.5T793-835l43 43q17 17 17 42t-17 42l-42 42Zm-42 42L248-120H120v-128l504-504 128 128Z"/></svg>
-        </md-icon>
-      </md-fab>
-      <md-menu x-offset="-2" y-offset="-57">
-        <md-menu-item headline="Text1"></md-menu-item>
-        <md-menu-item headline="Text2"></md-menu-item>
-        <md-menu-item headline="Text3"></md-menu-item>
-      </md-menu>
-    </div>
-    <md-divider></md-divider>
-    <md-documents id="md-documents-1">
-      <div slot="header">Документы</div>
-      <md-card icon1="calendar_today" iconText1="с 14 янв по 24 янв 2023г." iconSubText1="10 дней">Заявление на отпуск</md-card>
-      <md-card header="Резолюция" icon="call" iconText1="+7 987 654-32-10" iconSubText1="Телефон для уточнения деталей">N211 о переходе на КЭДО</md-card>
-      <md-card iconText1="ООО Кровельный дом" iconSubText1="Контрагент" iconText2="15 сент 2023г" iconSubText2="Дата подписания">Акт приема-передачи</md-card>
-    </md-documents>
-    <md-divider></md-divider>
-    <md-documents id="md-documents-2">
-      <div slot="header">Задачи</div>
-      <md-large-card
-        subHeader="Официальный запрос на разрешение отсутствия с работы в течение определенного периода времени для отдыха и личных целей"
-        icon1="calendar_today" iconText1="с 14 янв по 24 янв 2023г." iconSubText1="10 дней"
-        icon2="calendar_today" iconText2="с 14 янв по 24 янв 2023г." iconSubText2="10 дней"
-        commentHeader="Феофилактов Евграфий Степанович:" commentCard="Валера, у тебя неотгуленный отпуск, надо срочно подписать"
-        state="На подписание">
-        Заявление на отпуск
-      </md-large-card>
-      <md-large-card icon1="call" iconText1="+7 987 654-32-10" iconSubText1="Телефон для уточнения деталей"
-        icon2="calendar_today" iconText2="с 14 янв по 24 янв 2023г." iconSubText2="10 дней" state="На ознакомление">
-        Дополнительное соглашение</md-large-card>
-      <md-large-card
-              subHeader="Официальный запрос на разрешение отсутствия с работы в течение определенного периода времени для отдыха и личных целей"
-              icon1="call" iconText1="+7 987 654-32-10" iconSubText1="Телефон для уточнения деталей"
-              icon2="calendar_today" iconText2="Инициатор" iconSubText2="Феофилактов Евграфий Степанович"
-              commentHeader="Феофилактов Евграфий Степанович:" commentCard="Лучше подойди лично"
-              state="На проработку">
-        Получить
-      </md-large-card>
-    </md-documents>
-    <md-divider></md-divider>
-    <md-documents id="md-documents-3">
-      <div slot="header">Контакты</div>
-    </md-documents>
+    <main>
+      <md-documents>
+        <div slot="header">Документы</div>
+        <md-card icon1="calendar_today" iconText1="с 14 янв по 24 янв 2023г." iconSubText1="10 дней">Заявление на отпуск</md-card>
+        <md-card header="Резолюция" icon="call" iconText1="+7 987 654-32-10" iconSubText1="Телефон для уточнения деталей">N211 о переходе на КЭДО</md-card>
+        <md-card iconText1="ООО Кровельный дом" iconSubText1="Контрагент" iconText2="15 сент 2023г" iconSubText2="Дата подписания">Акт приема-передачи</md-card>
+      </md-documents>
+      <md-divider></md-divider>
+      <md-documents>
+        <div slot="header">Задачи</div>
+        <md-large-card
+          subHeader="Официальный запрос на разрешение отсутствия с работы в течение определенного периода времени для отдыха и личных целей"
+          icon1="calendar_today" iconText1="с 14 янв по 24 янв 2023г." iconSubText1="10 дней"
+          icon2="calendar_today" iconText2="с 14 янв по 24 янв 2023г." iconSubText2="10 дней"
+          commentHeader="Феофилактов Евграфий Степанович:" commentCard="Валера, у тебя неотгуленный отпуск, надо срочно подписать"
+          state="На подписание">
+          Заявление на отпуск
+        </md-large-card>
+        <md-large-card icon1="call" iconText1="+7 987 654-32-10" iconSubText1="Телефон для уточнения деталей"
+          icon2="calendar_today" iconText2="с 14 янв по 24 янв 2023г." iconSubText2="10 дней" state="На ознакомление">
+          Дополнительное соглашение</md-large-card>
+        <md-large-card
+                subHeader="Официальный запрос на разрешение отсутствия с работы в течение определенного периода времени для отдыха и личных целей"
+                icon1="call" iconText1="+7 987 654-32-10" iconSubText1="Телефон для уточнения деталей"
+                icon2="calendar_today" iconText2="Инициатор" iconSubText2="Феофилактов Евграфий Степанович"
+                commentHeader="Феофилактов Евграфий Степанович:" commentCard="Лучше подойди лично"
+                state="На проработку">
+          Получить
+        </md-large-card>
+      </md-documents>
+      <md-divider></md-divider>
+      <md-documents>
+        <div slot="header">Контакты</div>
+        <md-card icon1="calendar_today" iconText1="с 14 янв по 24 янв 2023г." iconSubText1="10 дней">Заявление на отпуск</md-card>
+      </md-documents>
+    </main>
     <script type="module" src="src/pages/index.js"></script>
   </body>
 </html>

@@ -12,8 +12,8 @@ export class LargeCard extends LitElement {
         flex-direction: column;
         border-radius: 10px;
         padding: 10px;
-        background-color: var(--md-sys-color-tertiary-container);
-        color: var(--md-sys-color-on-tertiary-container);
+        background-color: var(--md-sys-color-primary-container);
+        color: var(--md-sys-color-on-primary-container);
       }
       .surface:hover {
         --md-elevation-level: 3;
@@ -38,7 +38,8 @@ export class LargeCard extends LitElement {
         flex-direction: column;
       }
       .comment-body {
-        background-color: var(--md-sys-color-surface-variant);
+        background-color: var(--md-sys-color-secondary-container);
+        color: var(--md-sys-color-on-secondary-container);
         border-radius: 10px;
         padding: 10px;
       }

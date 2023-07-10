@@ -14,8 +14,8 @@ export class Card extends LitElement {
         padding: 10px;
         height: 176px;
         width: 200px;
-        background-color: var(--md-sys-color-tertiary-container);
-        color: var(--md-sys-color-on-tertiary-container);
+        background-color: var(--md-sys-color-primary-container);
+        color: var(--md-sys-color-on-primary-container);
         box-sizing: border-box;
       }
       .surface:hover {

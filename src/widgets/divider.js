@@ -1,7 +1,8 @@
 import {html, css, LitElement} from 'lit';
 
 export class Divider extends LitElement {
-    static styles = css`:host { 
+    static styles = css`:host {
+      flex: 1 0 100%;
       display: block;
       height: 28px;
     }`;
