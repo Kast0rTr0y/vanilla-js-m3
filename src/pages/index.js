@@ -5,6 +5,7 @@ import '@material/web/icon/icon'
 import '@material/web/iconbutton/standard-icon-button'
 import '@material/web/iconbutton/filled-tonal-icon-button'
 import '@material/web/labs/badge/badge'
+import '@material/web/labs/navigationdrawer/navigation-drawer-modal'
 import '@material/web/dialog/dialog'
 import '@material/web/button/text-button'
 import '@material/web/button/filled-button'
@@ -76,6 +77,9 @@ document.addEventListener("DOMContentLoaded",async () => {
             navigation.style.height = "56px";
         }
     });
+    document.querySelector("#menu").addEventListener("click",()=>{
+        document.querySelector("md-navigation-drawer-modal").opened = true;
+    })
 })
 
 window.addEventListener("resize", (event) => {

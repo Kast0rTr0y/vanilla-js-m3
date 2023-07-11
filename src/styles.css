@@ -17,6 +17,11 @@
   --logo-text: #002342;
   --md-dialog-container-color: var(--md-sys-color-background, #ece6f0);
   --md-menu-container-shape: 12px;
+  --md-navigation-drawer-modal-container-width: 300px;
+  --md-navigation-drawer-modal-container-color: var(--md-sys-color-primary-container);
+  --md-navigation-drawer-modal-container-elevation: 4;
+  --md-list-item-list-item-container-shape: 9999px;
+  --md-menu-item-list-item-selected-container-color: var(--md-sys-color-primary)
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -153,6 +158,9 @@ nav {
 .chat_button {
   display: none;
 }
+#menu {
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .fab-container {
     z-index: 200;
@@ -182,6 +190,12 @@ nav {
     display: none;
   }
   .chat_button {
+    display: block;
+  }
+  #logo_text {
+    display: none;
+  }
+  #menu {
     display: block;
   }
 }

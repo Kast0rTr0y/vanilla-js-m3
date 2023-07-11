@@ -11,9 +11,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,1,-50..200" />
   </head>
   <body>
+    <md-navigation-drawer-modal style="z-index: 1000">
+      <md-menu-item headline="Главная" selected="true" style="--md-list-item-list-item-label-text-color: var(--md-sys-color-on-primary)"></md-menu-item>
+      <md-menu-item headline="Документы"></md-menu-item>
+      <md-menu-item headline="Жизненные ситуации"></md-menu-item>
+      <md-menu-item headline="Новости"></md-menu-item>
+      <md-menu-item headline="Мои обращения"></md-menu-item>
+    </md-navigation-drawer-modal>
     <header>
       <m3-colors></m3-colors>
       <div style="flex:1 0 10vw;align-items: center;display: flex">
+        <md-standard-icon-button id="menu">
+          <md-icon>menu</md-icon>
+        </md-standard-icon-button>
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g>
             <path d="M43 20C43 30.4934 34.4934 39 24 39C13.5066 39 5 30.4934 5 20C5 9.50659 13.5066 1 24 1C34.4934 1 43 9.50659 43 20Z" stroke="var(--md-sys-color-on-background)" stroke-width="2"/>
@@ -24,7 +34,7 @@
             <path d="M26.7501 32.0243L24.9167 31.2251L26.7501 32.0243ZM36.3333 5.03417L24.9167 31.2251L28.5835 32.8235L40.0001 6.63251L36.3333 5.03417ZM23.0833 31.2251L11.6668 5.03417L7.99998 6.63251L19.4166 32.8235L23.0833 31.2251ZM24.9167 31.2251C24.5678 32.0257 23.4323 32.0257 23.0833 31.2251L19.4166 32.8235C21.1614 36.8263 26.8387 36.8262 28.5835 32.8235L24.9167 31.2251Z" fill="var(--md-sys-color-on-background" mask="url(#path-3-inside-1_318_1911)"/>
           </g>
         </svg>
-        <span style="padding: 12px">Личный кабинет партнера</span>
+        <span id="logo_text" style="padding: 12px">Личный кабинет партнера</span>
         <div style="flex: 1;display: flex; flex-direction: row-reverse;align-items: center">
           <div style="position: absolute">
             <md-menu id="md-menu2" x-offset="-300" y-offset="-20">
@@ -64,6 +74,10 @@
             <div class="tab" style="">
               <md-ripple></md-ripple>
               Новости
+            </div>
+            <div class="tab" style="">
+              <md-ripple></md-ripple>
+              Мои обращения
             </div>
           </div>
         </div>
@@ -138,6 +152,8 @@
         <div slot="header" style="padding: 8px;">Мои обращения</div>
       </md-documents>
       <md-divider></md-divider>
+      <md-divider></md-divider>
+      <md-divider></md-divider>
     </main>
     <md-dialog>
       <div slot="header">
@@ -155,14 +171,14 @@
       <div class="chat_container">
         <md-icon style="background-color: var(--md-sys-color-primary);border-radius: 999px;padding:5px;color:var(--md-sys-color-on-primary)"><svg xmlns="http://www.w3.org/2000/svg" fill="var(--md-sys-color-on-primary-container)" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></md-icon>
         <div style="padding: 10px;">Поддержка</div>
-        <md-standard-icon-button>
-          <md-icon>more_horiz</md-icon>
+        <md-standard-icon-button style="--md-icon-button-unselected-hover-state-layer-color: var(--md-sys-color-tertiary-container)">
+          <md-icon style="--md-icon-color:var(--md-sys-color-on-tertiary)">more_horiz</md-icon>
         </md-standard-icon-button>
         <md-filled-tonal-icon-button style="">
           <md-icon>edit</md-icon>
         </md-filled-tonal-icon-button>
-        <md-standard-icon-button>
-          <md-icon>expand_less</md-icon>
+        <md-standard-icon-button style="--md-icon-button-unselected-hover-state-layer-color: var(--md-sys-color-tertiary-container)">
+          <md-icon style="--md-icon-color:var(--md-sys-color-on-tertiary)">expand_less</md-icon>
         </md-standard-icon-button>
       </div>
     </div>
