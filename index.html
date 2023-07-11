@@ -43,10 +43,33 @@
         </div>
       </div>
     </header>
+    <div id="navigation__divider1" style="height: 50px;"></div>
     <main>
-      <div style="flex: 1 0 100%;">
+      <nav id="navigation">
+        <div id="shadow"></div>
+        <div style="display: flex;height:100%">
+          <div class="tab" style="background-color: var(--md-sys-color-primary);color:var(--md-sys-color-on-primary)">
+            <md-ripple></md-ripple>
+            Главная
+          </div>
+          <div class="tab" style="">
+            <md-ripple></md-ripple>
+            Документы
+          </div>
+          <div class="tab" style="">
+            <md-ripple></md-ripple>
+            Жизненные ситуации
+          </div>
+          <div class="tab" style="">
+            <md-ripple></md-ripple>
+            Новости
+          </div>
+        </div>
+      </nav>
+      <div id="navigation__divider2" style="height: 56px;"></div>
+      <div id="scrolled" style="flex: 1 0 100%;">
         <div class="root">
-          <md-menu id="md-menu1" x-offset="-80" y-offset="-56">
+          <md-menu id="md-menu1" x-offset="-80" y-offset="-17">
             <md-menu-item headline="Документ"></md-menu-item>
             <md-menu-item headline="Доверенность"></md-menu-item>
             <md-menu-item headline="Заявление"></md-menu-item>

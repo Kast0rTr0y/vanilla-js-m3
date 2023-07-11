@@ -20,7 +20,7 @@ export class Contact extends LitElement {
         border-radius: 10px;
         padding: 10px;
         height: 176px;
-        width: 350px;
+        width: 300px;
         background-color: var(--md-sys-color-background);
         color: var(--md-sys-color-on-primary-container);
         box-sizing: border-box;

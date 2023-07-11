@@ -6,6 +6,8 @@ import '@material/web/iconbutton/standard-icon-button'
 import '@material/web/labs/badge/badge'
 import '@material/web/dialog/dialog'
 import '@material/web/button/text-button'
+import '@material/web/button/filled-button'
+import '@material/web/ripple/ripple'
 import "vanilla-colorful"
 import "../theme/theme.css"
 import "../styles.css"
@@ -54,6 +56,25 @@ document.addEventListener("DOMContentLoaded",async () => {
     about.addEventListener("click", ()=>{
         dialog.show();
     })
+
+    const wrapper = document.querySelector("main");
+    const content = document.querySelector("#scrolled");
+    const top = document.querySelector("header");
+    const shadow = document.querySelector("#shadow");
+    const navigation = document.querySelector("#navigation");
+    let contentScrollHeight = content.scrollHeight - top.offsetHeight;
+    wrapper.addEventListener('scroll', function(){
+        let currentScroll = Math.abs(this.scrollTop / (contentScrollHeight));
+        if(currentScroll > 0.3) {
+            shadow.style.display = "block";
+            // shadow.style.opacity = `${currentScroll / 4}`;
+            navigation.style.height = "48px";
+        } else {
+            shadow.style.display = "none";
+            // shadow.style.opacity = "0";
+            navigation.style.height = "56px";
+        }
+    });
 })
 
 window.addEventListener("resize", (event) => {
@@ -68,6 +89,6 @@ window.addEventListener("resize", (event) => {
         menu.anchorСorner = "END_START";
         menu.menuCorner="START_START";
         menu.xOffset=-80;
-        menu.yOffset=-56;
+        menu.yOffset=-17;
     }
 });
