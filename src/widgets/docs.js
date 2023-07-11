@@ -32,7 +32,10 @@ export class Documents extends LitElement {
     }
 
     render() {
-        return html`<slot name="header"></slot>
+        return html`<div style="display: flex; align-items: center; justify-content: space-between">
+          <slot name="header"></slot>
+          <md-text-button>Посмотреть все</md-text-button>
+        </div>
         <div class="container">
             <slot></slot>
         </div>`;
