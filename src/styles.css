@@ -15,6 +15,8 @@
   --md-dialog-supporting-text-type: 400 0.875rem / 1.25rem var(--md-ref-typeface-plain, Inter);
   --md-text-button-label-text-type: var(--md-sys-typescale-label-large, 500 0.875rem / 1.25rem var(--md-ref-typeface-plain, Inter));
   --logo-text: #002342;
+  --md-dialog-container-color: var(--md-sys-color-background, #ece6f0);
+  --md-menu-container-shape: 12px;
 }
 @media (prefers-color-scheme: dark) {
   :root {

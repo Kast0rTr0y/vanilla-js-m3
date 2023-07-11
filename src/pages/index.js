@@ -18,6 +18,7 @@ import '../theme/theme'
 import '../widgets/colors'
 import '../widgets/search'
 import '../widgets/user'
+import '../widgets/contact'
 
 const width = window.innerWidth;
 

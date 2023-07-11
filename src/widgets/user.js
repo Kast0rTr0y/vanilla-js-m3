@@ -9,6 +9,7 @@ export class User extends LitElement {
       position: relative;
       border-radius: 9999px;
       cursor: pointer;
+      -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
     }
     .avatar {
       width: 40px;

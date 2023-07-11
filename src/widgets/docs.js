@@ -7,7 +7,7 @@ export class Documents extends LitElement {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 12px;
         background-color: var(--md-sys-color-background);
         box-sizing: border-box;
         overflow: hidden;
