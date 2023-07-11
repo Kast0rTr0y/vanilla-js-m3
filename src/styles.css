@@ -143,6 +143,16 @@ nav {
 .tab_list::-webkit-scrollbar {
    display: none;
  }
+.chat {
+  position: absolute;right: 0px;bottom: 0px;
+}
+.chat_container {
+  background-color: var(--md-sys-color-tertiary); color:var(--md-sys-color-on-tertiary);
+  border-top-left-radius: 8px;border-bottom-right-radius: 12px;padding: 12px;display: flex;align-items: center
+}
+.chat_button {
+  display: none;
+}
 @media screen and (max-width: 800px) {
   .fab-container {
     z-index: 200;
@@ -163,5 +173,15 @@ nav {
   }
   #navigation__divider2 {
     display: none !important;
+  }
+  .chat {
+    right: 16px;
+    bottom: 90px;
+  }
+  .chat_container {
+    display: none;
+  }
+  .chat_button {
+    display: block;
   }
 }
