@@ -10,6 +10,11 @@
   --md-custom-color-on-green: #ffffff;
   --md-custom-color-green-container: #6bff8f;
   --md-custom-color-green-on-container: #002109;
+  --md-filled-button-label-text-type: var(--md-sys-typescale-label-large, 500 0.875rem / 1.25rem var(--md-ref-typeface-plain, Inter));
+  --md-list-item-list-item-label-text-type: var(--md-sys-typescale-body-large, 400 1rem / 1.5rem var(--md-ref-typeface-plain, Inter));
+  --md-dialog-supporting-text-type: 400 0.875rem / 1.25rem var(--md-ref-typeface-plain, Inter);
+  --md-text-button-label-text-type: var(--md-sys-typescale-label-large, 500 0.875rem / 1.25rem var(--md-ref-typeface-plain, Inter));
+  --logo-text: #002342;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -21,11 +26,12 @@
     --md-custom-color-on-green: #003915;
     --md-custom-color-green-container: #005321;
     --md-custom-color-green-on-container: #6bff8f;
+    --logo-text: #95a1ab;
   }
 }
 html {
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;

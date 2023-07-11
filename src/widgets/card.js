@@ -3,8 +3,15 @@ import {html, css, LitElement} from 'lit';
 export class Card extends LitElement {
     static styles = css`
       :host{
-        padding:10px;
+        padding:8px;
         flex: 0 0 200px;
+      }
+      :host slot {
+        display: block;
+        font-size: var(--md-sys-typescale-body-large-font-size);
+        line-height: var(--md-sys-typescale-body-large-line-height);
+        //letter-spacing: var(--md-sys-typescale-body-large-letter-spacing);
+        letter-spacing: 0.1px;
       }
       .surface {         
         position: relative;
@@ -22,7 +29,12 @@ export class Card extends LitElement {
         --md-elevation-level: 3;
       }
       .sub {
+        padding-top: 16px;
         display: flex;
+      }
+      .sub>md-icon{
+        padding: 4px 12px 4px 4px;
+        opacity: .6
       }
       .icons {
         display: flex;
@@ -31,10 +43,13 @@ export class Card extends LitElement {
       .body-medium {
         font-size: var(--md-sys-typescale-body-medium-font-size);
         line-height: var(--md-sys-typescale-body-medium-line-height);
+        letter-spacing: var(--md-sys-typescale-body-medium-letter-spacing);
       }
       .body-small {
         font-size: var(--md-sys-typescale-body-small-font-size);
         line-height: var(--md-sys-typescale-body-small-line-height);
+        letter-spacing: var(--md-sys-typescale-body-small-letter-spacing);
+        opacity: .6
       }
     `;
     static properties = {
@@ -58,14 +73,14 @@ export class Card extends LitElement {
             <div class="body-small">${this.header}</div>
             <slot></slot>
             <div class="sub">
-                <md-icon>${this.icon1}</md-icon>
+                ${this.icon1 ? html`<md-icon>${this.icon1}</md-icon>`:``}
                 <div class="icons">
                     <div class="body-medium">${this.iconText1}</div>
                     <div class="body-small">${this.iconSubText1}</div>
                 </div>
             </div>
             <div class="sub">
-                <md-icon>${this.icon2}</md-icon>
+                ${this.icon2 ? html`<md-icon>${this.icon2}</md-icon>`:``}
                 <div class="icons">
                     <div class="body-medium">${this.iconText2}</div>
                     <div class="body-small">${this.iconSubText2}</div>

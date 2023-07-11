@@ -10,6 +10,7 @@ export class LargeCard extends LitElement {
       :host slot {
         font-size: var(--md-sys-typescale-body-large-font-size);
         line-height: var(--md-sys-typescale-body-large-line-height);
+        letter-spacing: var(--md-sys-typescale-body-large-letter-spacing);
       }
       .surface {         
         position: relative;
@@ -27,6 +28,10 @@ export class LargeCard extends LitElement {
         display: flex;
         padding: 12px 0px;
       }
+      .sub>md-icon{
+        padding: 4px 12px 4px 4px;
+        opacity: .6
+      }
       .icons {
         display: flex;
         flex-direction: column;
@@ -34,10 +39,13 @@ export class LargeCard extends LitElement {
       .body-medium {
         font-size: var(--md-sys-typescale-body-medium-font-size);
         line-height: var(--md-sys-typescale-body-medium-line-height);
+        letter-spacing: var(--md-sys-typescale-body-medium-letter-spacing);
       }
       .body-small {
         font-size: var(--md-sys-typescale-body-small-font-size);
         line-height: var(--md-sys-typescale-body-small-line-height);
+        letter-spacing: var(--md-sys-typescale-body-small-letter-spacing);
+        opacity: .6
       }
       .comment {
         display: flex;
@@ -46,7 +54,7 @@ export class LargeCard extends LitElement {
         gap:4px;
       }
       .comment-body {
-        opacity: .7;
+        opacity: .5;
         background-color: var(--md-sys-color-primary);
         color: var(--md-sys-color-on-primary);
         border-radius: 10px;
@@ -71,6 +79,7 @@ export class LargeCard extends LitElement {
         justify-content: flex-end;
         font-size: var(--md-sys-typescale-label-small-font-size);
         line-height: var(--md-sys-typescale-label-small-line-height);
+        letter-spacing: var(--md-sys-typescale-label-small-letter-spacing);
         color: var(--md-sys-color-on-surface);
         align-items: center;
       }
