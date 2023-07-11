@@ -84,7 +84,7 @@ main {
 .tab {
   display: flex;
   justify-content: center;
-  width: 160px;
+  /*width: 160px;*/
   display:flex;
   align-items:center;
   padding: 0px 14px;
@@ -95,6 +95,7 @@ main {
   font-size: var(--md-sys-typescale-body-medium-font-size);
   line-height: var(--md-sys-typescale-body-medium-line-height);
   letter-spacing: var(--md-sys-typescale-body-medium-letter-spacing);
+  flex: 1 0 160px;
 }
 #shadow,
 #shadow::before,
@@ -128,6 +129,20 @@ nav {
   border-radius: 9999px;
   background-color: var(--md-sys-color-primary-container);
 }
+.tab_list {
+  border-radius: 9999px;
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  -ms-overflow-style: none
+}
+.tab_list::-webkit-scrollbar {
+   display: none;
+ }
 @media screen and (max-width: 800px) {
   .fab-container {
     z-index: 200;

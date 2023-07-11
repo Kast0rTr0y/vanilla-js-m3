@@ -89,6 +89,6 @@ window.addEventListener("resize", (event) => {
         menu.anchorСorner = "END_START";
         menu.menuCorner="START_START";
         menu.xOffset=-80;
-        menu.yOffset=-17;
+        menu.yOffset=0;
     }
 });
