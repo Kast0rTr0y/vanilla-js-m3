@@ -304,15 +304,17 @@ md-icon[filled] {
 .logo {
   margin:10px;
   border-radius: 9999px;
-  background-color: var(--md-sys-color-surface-variant);
+  background-color: var(--md-sys-color-surface);
   width: 40px;
   height: 40px;
 }
 .login {
+  position: relative;
   display: flex;
   align-items: center;
   height: 56px;
-  color: var(--md-sys-color-on-surface)
+  color: var(--md-sys-color-on-surface);
+  border-radius: 999px;
 }
 @media screen and (min-width: 1439px) and (max-width: 1500px) {
   .login-name {

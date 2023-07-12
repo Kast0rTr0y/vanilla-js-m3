@@ -27,35 +27,31 @@ import "@material/web/iconbutton/standard-icon-button.js";
 import "@material/web/list/list.js";
 import "@material/web/list/list-item.js";
 import "@material/web/radio/radio.js";
-
-import {
-  themeFromSourceColor,
-  argbFromHex,
-  applyTheme
-} from "@material/material-color-utilities";
+import "@material/web/menu/menu.js";
+import "@material/web/menu/menu-item.js";
+import "@material/web/dialog/dialog.js";
 
 import "./header.js";
-
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", ({ matches }) => {
-    const color = window.localStorage.getItem("color") || "#6750A4";
-    if (matches) {
-      applyTheme(themeFromSourceColor(argbFromHex(color)), {
-        target: document.querySelector(":root"),
-        dark: true
-      });
-    } else {
-      applyTheme(themeFromSourceColor(argbFromHex(color)), {
-        target: document.querySelector(":root"),
-        dark: false
-      });
-    }
-  });
 
 document.addEventListener("DOMContentLoaded",()=> {
     Array.from(document.getElementsByClassName("md3-navigation-tab")).forEach(element=>element.addEventListener("click", (event) => {
         element.classList.add("md3-navigation-tab--active");
         Array.from(document.getElementsByClassName("md3-navigation-tab")).forEach(el=>element!=el && el.classList.remove("md3-navigation-tab--active"));
     }))
+    const menu = document.querySelector("#md-menu");
+    menu.addEventListener("open",(e)=>{
+        e.target.open = true;
+    })
+    menu.anchor = document.querySelector("#login");
+
+    document.querySelector("#login").addEventListener("click",()=>{
+        const event = new Event('open', {bubbles: true, composed: true});
+        menu.dispatchEvent(event);
+    })
+
+    const about = document.querySelector("#about");
+    const dialog = document.querySelector("md-dialog");
+    about.addEventListener("click", ()=>{
+        dialog.show();
+    })
 })
