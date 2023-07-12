@@ -31,10 +31,12 @@
   /*--md-filter-chip-elevated-container-color: var(--md-sys-color-surface);*/
   /*--md-switch-unselected-track-color: var(--md-sys-color-surface-highest);*/
   --md-menu-container-shape: 12px;
+  --logo-text: #002342;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --logo-color-main: #fff;
+    --logo-text: #95a1ab;
   }
 }
 html {
