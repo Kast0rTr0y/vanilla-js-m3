@@ -30,6 +30,7 @@
   /*--md-suggestion-chip-elevated-container-color: var(--md-sys-color-surface);*/
   /*--md-filter-chip-elevated-container-color: var(--md-sys-color-surface);*/
   /*--md-switch-unselected-track-color: var(--md-sys-color-surface-highest);*/
+  --md-menu-container-shape: 12px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
