@@ -2,7 +2,7 @@ import {
     themeFromSourceColor,
     argbFromHex,
     applyTheme
-} from "@material/material-color-utilities";
+} from "@w3h/material-color-utilities";
 
 const color = window.localStorage.getItem("color") || "#008dd7"
   

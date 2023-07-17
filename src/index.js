@@ -25,7 +25,7 @@ import {
   themeFromSourceColor,
   argbFromHex,
   applyTheme
-} from "@material/material-color-utilities";
+} from "@w3h/material-color-utilities";
 
 import "./header.js";
 
@@ -45,3 +45,5 @@ window
       });
     }
   });
+
+document.querySelector("#test").addEventListener("input",(e)=>{e.target.reportValidity()})
